@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mediterranea Property Consulting</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="container nav">
       <div class="logo">
-        <img src="assets/mediterranea_logo_icon.png" alt="Logo Mediterranea">
+        <img src="assets/mediterranea_logo_icon.png" alt="Logo Mediterranea" />
         <div class="brand" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</div>
       </div>
       <div class="lang-switch">
@@ -24,45 +24,34 @@
 
   <main class="hero">
     <div class="container hero-grid">
+      <!-- Colonne gauche (texte + contacts) -->
       <div>
         <div class="tag" data-i18n="tagline">Votre partenaire immobilier en Méditerranée</div>
         <h1>Mediterranea Property Consulting</h1>
         <p class="sub" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</p>
-        <!-- CONTACT -->
-<div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
-  <!-- Bouton E-mail : affiche l’adresse obfusquée + Copier, puis disparaît -->
-  <div class="email-pop">
-    <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
-    <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
-      <div class="email-row">
-        <span id="emailText" class="email-text"></span>
-        <button class="copy-btn" onclick="copyEmail()">Copier</button>
+
+        <!-- CONTACTS : bloc unique, propre -->
+        <div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
+          <!-- Bouton E-mail (obfusqué + copie + disparition) -->
+          <div class="email-pop">
+            <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
+            <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
+              <div class="email-row">
+                <span id="emailText" class="email-text"></span>
+                <button class="copy-btn" onclick="copyEmail()">Copier</button>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
-  <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
-</div>
-
-
-          <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank">LinkedIn</a>
-          <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank">Instagram</a>
-          <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank">WhatsApp</a>
-          <div class="email-pop" style="margin-top:20px">
-  <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
-  <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
-    <div class="email-row">
-      <span id="emailText" class="email-text"></span>
-      <button class="copy-btn" onclick="copyEmail()">Copier</button>
-    </div>
-  </div>
-</div>
-        /div>
-      </div>
+      <!-- Colonne droite (photo) -->
       <div class="hero-card">
-        <img src="assets/my_pic.jpeg" alt="Serafina LOGGIA">
+        <img src="assets/my_pic.jpeg" alt="Serafina LOGGIA" />
       </div>
     </div>
   </main>
@@ -73,4 +62,4 @@
     </div>
   </footer>
 </body>
-
+</html>
