@@ -85,3 +85,31 @@ a:hover{text-decoration:underline}
 
 /* options de layout des boutons de contact */
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* Cartes cliquables */
+.link-card {
+  text-align: left;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.link-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.10); }
+.link-card h3 { margin: 0; }
+
+/* Modales */
+.modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; }
+.modal[aria-hidden="false"] { display: flex; }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.35); }
+.modal-dialog {
+  position: relative; background: #fff; max-width: 720px; width: 92%;
+  padding: 24px 22px; border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  outline: none;
+}
+.modal-close {
+  position: absolute; top: 8px; right: 12px; border: 0; background: transparent;
+  font-size: 28px; line-height: 1; cursor: pointer;
+}
