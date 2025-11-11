@@ -8,12 +8,12 @@
   <script defer src="assets/script.js"></script>
 </head>
 <body>
-  <!-- ===== Header : logo + marque + langues (PAS de réseaux ici) ===== -->
+  <!-- ===== Header : logo + marque + langues ===== -->
   <header class="header">
     <div class="container nav">
       <div class="logo">
         <img src="assets/mediterranea_logo_icon.png" alt="Logo Mediterranea" />
-        <div class="brand" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</div>
+        <div class="brand">PROPERTY CONSULTING – by Serafina LOGGIA</div>
       </div>
       <div class="lang-switch">
         <button data-lang="fr" class="active" onclick="switchLang('fr')">FR</button>
@@ -23,18 +23,22 @@
     </div>
   </header>
 
-  <!-- ===== Hero : titre + bloc contact (unique) + photo ===== -->
+  <!-- ===== Hero : titre + contact + photo ===== -->
   <main class="hero">
     <div class="container hero-grid">
       <!-- Colonne gauche -->
       <div>
         <div class="tag" data-i18n="tagline">Votre partenaire immobilier en Méditerranée</div>
         <h1>Mediterranea Property Consulting</h1>
-        <p class="sub" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</p>
 
-        <!-- CONTACT (UN SEUL BLOC) -->
+        <!-- Petit sous-titre différent (plus de doublon) -->
+        <p class="sub" data-i18n="subtitle">
+          Conseil et accompagnement FR–IT pour acheter, louer ou se relocaliser.
+        </p>
+
+        <!-- CONTACT — BLOC UNIQUE -->
         <div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
-          <!-- Bouton E-mail (affiche adresse obfusquée + Copier, puis disparaît) -->
+          <!-- Bouton E-mail -->
           <div class="email-pop">
             <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
             <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
@@ -49,6 +53,25 @@
           <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
           <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
         </div>
+
+        <!-- PITCH / À PROPOS -->
+        <section class="section" style="padding-top:0;border-top:none">
+          <h2 data-i18n="about_title">À propos</h2>
+          <p data-i18n="about_body">
+            Je suis Serafina LOGGIA. J’accompagne des clients francophones et italophones
+            pour acheter, louer ou se relocaliser entre France et Italie. Mon approche :
+            sélection exigeante des biens, explications claires des démarches, négociation
+            au service de vos intérêts, et un suivi humain jusqu’à l’installation.
+          </p>
+
+          <h2 style="margin-top:18px" data-i18n="services_title">Ce que j’apporte</h2>
+          <div class="grid-3">
+            <div class="card"><h3 data-i18n="s1">Recherche & présélection pertinentes</h3></div>
+            <div class="card"><h3 data-i18n="s2">Visites (présentiel / vidéo) & comptes rendus</h3></div>
+            <div class="card"><h3 data-i18n="s3">Négociation & sécurisation de l’opération</h3></div>
+            <div class="card"><h3 data-i18n="s4">Relocation : contrats, écoles, mobilité</h3></div>
+          </div>
+        </section>
       </div>
 
       <!-- Colonne droite -->
@@ -60,7 +83,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© Mediterranea Property Consulting - by Serafina LOGGIA</p>
+      <p>© Mediterranea Property Consulting – Serafina LOGGIA</p>
     </div>
   </footer>
 </body>
