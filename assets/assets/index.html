@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediterranea Property Consulting</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="assets/mediterranea_logo_icon.png" alt="Logo Mediterranea">
+        <div class="brand" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</div>
+      </div>
+      <div class="lang-switch">
+        <button data-lang="fr" class="active" onclick="switchLang('fr')">FR</button>
+        <button data-lang="en" onclick="switchLang('en')">EN</button>
+        <button data-lang="it" onclick="switchLang('it')">IT</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="tag" data-i18n="tagline">Votre partenaire immobilier en Méditerranée</div>
+        <h1>Mediterranea Property Consulting</h1>
+        <p class="sub" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</p>
+        <div class="cta-row">
+          <div class="email-pop">
+            <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
+            <div id="emailBox" class="email-box">
+              <div class="email-row">
+                <div id="emailText" class="email-text"></div>
+                <button class="copy-btn" onclick="copyEmail()">Copier</button>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank">Instagram</a>
+          <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/my_pic.jpeg" alt="Serafina LOGGIA">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Mediterranea Property Consulting - by Serafina LOGGIA</p>
+    </div>
+  </footer>
+</body>
