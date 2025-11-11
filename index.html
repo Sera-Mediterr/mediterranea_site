@@ -28,16 +28,23 @@
         <div class="tag" data-i18n="tagline">Votre partenaire immobilier en Méditerranée</div>
         <h1>Mediterranea Property Consulting</h1>
         <p class="sub" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</p>
-        <div class="cta-row">
-          <div class="email-pop">
-            <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
-            <div id="emailBox" class="email-box">
-              <div class="email-row">
-                <div id="emailText" class="email-text"></div>
-                <button class="copy-btn" onclick="copyEmail()">Copier</button>
-              </div>
-            </div>
-          </div>
+        <div class="cta-row" style="margin:14px 0 22px">
+  <!-- Bouton E-mail : affiche l’adresse obfusquée + bouton Copier -->
+  <div class="email-pop">
+    <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
+    <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
+      <div class="email-row">
+        <span id="emailText" class="email-text"></span>
+        <button class="copy-btn" onclick="copyEmail()">Copier</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
           <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank">LinkedIn</a>
           <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank">Instagram</a>
           <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank">WhatsApp</a>
