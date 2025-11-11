@@ -68,3 +68,39 @@ function copyEmail() {
 
 // Langue par défaut au chargement
 switchLang("fr");
+
+// === Modales : ouverture / fermeture ===
+function openModal(id) {
+  const m = document.getElementById(id);
+  if (!m) return;
+  m.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  const dlg = m.querySelector('.modal-dialog');
+  if (dlg) dlg.focus();
+}
+function closeModal(m) {
+  if (!m) return;
+  m.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('click', (e) => {
+  // clic sur une carte
+  const btn = e.target.closest('.link-card');
+  if (btn && btn.dataset.modal) {
+    e.preventDefault();
+    openModal(btn.dataset.modal);
+  }
+  // clic sur fermer / backdrop
+  if (e.target.matches('[data-close]')) {
+    closeModal(e.target.closest('.modal'));
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal[aria-hidden="false"]')
+      .forEach((m) => closeModal(m));
+  }
+});
+
