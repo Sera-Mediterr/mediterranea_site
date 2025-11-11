@@ -2,39 +2,39 @@
 const translations = {
   fr: {
     tagline: "Votre partenaire immobilier en Méditerranée",
-    subtitle: "Conseil et accompagnement FR–IT pour acheter, louer ou se relocaliser.",
+    subtitle: "Conseil acheteur (FR–EN–IT). Spécialiste Espagne & Maroc : recherche, analyse, visites, négociation, sécurisation jusqu’à l’acte.",
     about_title: "À propos",
     about_body:
-      "Je suis Serafina LOGGIA. J’accompagne des clients francophones et italophones pour acheter, louer ou se relocaliser entre France et Italie. Mon approche : sélection exigeante des biens, explications claires des démarches, négociation au service de vos intérêts, et un suivi humain jusqu’à l’installation.",
+      "Je suis Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
     services_title: "Ce que j’apporte",
-    s1: "Recherche & présélection pertinentes",
+    s1: "Recherche ciblée & présélection",
     s2: "Visites (présentiel / vidéo) & comptes rendus",
-    s3: "Négociation & sécurisation de l’opération",
-    s4: "Relocation : contrats, écoles, mobilité",
-  },
-  it: {
-    tagline: "Il tuo partner immobiliare nel Mediterraneo",
-    subtitle: "Consulenza FR–IT per comprare, affittare o trasferirsi.",
-    about_title: "Chi sono",
-    about_body:
-      "Sono Serafina LOGGIA. Accompagno clienti francofoni e italofoni ad acquistare, affittare o trasferirsi tra Francia e Italia. Approccio umano e chiaro: selezione mirata, iter spiegato, negoziazione dalla tua parte e follow-up fino all’insediamento.",
-    services_title: "Cosa offro",
-    s1: "Ricerca e preselezione mirata",
-    s2: "Visite (presenza / video) e report",
-    s3: "Negoziazione e sicurezza dell’operazione",
-    s4: "Relocation: contratti, scuole, mobilità",
+    s3: "Négociation & sécurisation jusqu’à l’acte",
+    s4: "Coordination locale (notaires, trad, démarches)",
   },
   en: {
-    tagline: "Your Mediterranean real estate partner",
-    subtitle: "FR–IT advisory to buy, rent or relocate.",
+    tagline: "Your Mediterranean buying advisor",
+    subtitle: "Buyer’s agent (FR–EN–IT). Focus on Spain & Morocco: search, due diligence, viewings, negotiation, deal security to completion.",
     about_title: "About",
     about_body:
-      "I’m Serafina LOGGIA. I help French- and Italian-speaking clients buy, rent or relocate across France and Italy. Human, bilingual support: targeted search, clear steps, strong negotiation and follow-through to settling in.",
-    services_title: "What I bring",
+      "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
+    services_title: "What I deliver",
     s1: "Targeted search & shortlisting",
     s2: "Viewings (in-person / video) & reporting",
-    s3: "Negotiation & deal security",
-    s4: "Relocation: contracts, schools, mobility",
+    s3: "Negotiation & deal security to completion",
+    s4: "Local coordination (notaries, translations, admin)",
+  },
+  it: {
+    tagline: "La tua consulente per acquistare nel Mediterraneo",
+    subtitle: "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, negoziazione, sicurezza fino al rogito.",
+    about_title: "Chi sono",
+    about_body:
+      "Sono Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
+    services_title: "Cosa offro",
+    s1: "Ricerca mirata & preselezione",
+    s2: "Visite (presenza / video) & report",
+    s3: "Negoziazione & sicurezza fino al rogito",
+    s4: "Coordinamento locale (notai, traduzioni, pratiche)",
   },
 };
 
