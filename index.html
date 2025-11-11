@@ -59,21 +59,30 @@
         <section class="section" style="padding-top:0;border-top:none">
           <h2 data-i18n="about_title">À propos</h2>
           <p data-i18n="about_body">
-            Je suis Serafina LOGGIA. J’accompagne des clients francophones et italophones
-            pour acheter, louer ou se relocaliser entre France et Italie. Mon approche :
+            Je m'appelle Serafina LOGGIA. J’accompagne les personnes souhaitant
+            investir ou se relocaliser au soleil, en Espagne ou au Maroc. Mon approche :
             sélection exigeante des biens, explications claires des démarches, négociation
             au service de vos intérêts, et un suivi humain jusqu’à l’installation.
           </p>
 
           <h2 style="margin-top:18px" data-i18n="services_title">Ce que j’apporte</h2>
-          <div class="grid-3">
-            <div class="card"><h3 data-i18n="s1">Recherche & présélection pertinentes</h3></div>
-            <div class="card"><h3 data-i18n="s2">Visites (présentiel / vidéo) & comptes rendus</h3></div>
-            <div class="card"><h3 data-i18n="s3">Négociation & sécurisation de l’opération</h3></div>
-            <div class="card"><h3 data-i18n="s4">Relocation : contrats, écoles, mobilité</h3></div>
-          </div>
-        </section>
-      </div>
+        <div class="grid-3">
+  <button class="card link-card" data-modal="m1">
+    <h3>Recherche ciblée & présélection</h3>
+  </button>
+
+  <button class="card link-card" data-modal="m2">
+    <h3>Visites (présentiel / vidéo) & comptes rendus</h3>
+  </button>
+
+  <button class="card link-card" data-modal="m3">
+    <h3>Négociation & sécurisation jusqu’à l’acte</h3>
+  </button>
+
+  <button class="card link-card" data-modal="m4">
+    <h3>Coordination locale (notaires, trad, démarches)</h3>
+  </button>
+</div>
 
       <!-- Colonne droite -->
       <div class="hero-card">
@@ -81,7 +90,49 @@
       </div>
     </div>
   </main>
+  <!-- Modales de détail -->
+<div id="m1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m1t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m1t">Recherche ciblée & présélection</h3>
+    <p>Brief précis (budget, lieux, critères). Veille Espagne/Maroc, filtrage des annonces, vérifications de base, shortlist documentée.</p>
+    <ul>
+      <li>Cartographie quartiers / micro-marchés</li>
+      <li>Repérage opportunités / signaux d’alerte</li>
+      <li>Pré-questions aux agences / vendeurs</li>
+    </ul>
+  </div>
+</div>
 
+<div id="m2" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m2t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m2t">Visites (présentiel / vidéo) & comptes rendus</h3>
+    <p>Organisation, check-list sur site, vidéo si besoin, compte rendu structuré (points forts / faibles, budget travaux, contexte).</p>
+  </div>
+</div>
+
+<div id="m3" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m3t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m3t">Négociation & sécurisation jusqu’à l’acte</h3>
+    <p>Stratégie d’offre, négociation, coordination notaire/avocat, délais, clauses, acompte, traduction si besoin — jusqu’à la signature.</p>
+  </div>
+</div>
+
+<div id="m4" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m4t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m4t">Coordination locale</h3>
+    <p>Réseau Espagne & Maroc : notaires, avocats, banques, traductions, ouverture de comptes/contrats, adresses utiles.</p>
+  </div>
+</div>
+
+  
   <footer class="footer">
     <div class="container">
       <p>© Mediterranea Property Consulting – Serafina LOGGIA</p>
