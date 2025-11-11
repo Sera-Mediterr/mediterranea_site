@@ -40,14 +40,15 @@
 <div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
   <!-- Bouton E-mail (affiche adresse obfusquée + Copier, puis disparaît) -->
   <div class="email-pop">
-    <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
-    <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
-      <div class="email-row">
-        <span id="emailText" class="email-text"></span>
-        <button class="copy-btn" onclick="copyEmail()">Copier</button>
-      </div>
+  <!-- Remplace le <button> par un <a> stylé comme les autres -->
+  <a href="#" class="btn btn-outline" onclick="revealEmail(); return false;">E-mail</a>
+  <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
+    <div class="email-row">
+      <span id="emailText" class="email-text"></span>
+      <button class="copy-btn" onclick="copyEmail()">Copier</button>
     </div>
   </div>
+</div>
 
   <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
   <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
