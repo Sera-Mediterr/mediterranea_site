@@ -78,3 +78,10 @@ a:hover{text-decoration:underline}
   gap: 12px;
   align-items: center;
 }
+/* Assure l’affichage et la position du popover */
+.email-pop { display: inline-block !important; position: relative; }
+#emailBox { display: none; }
+.email-box { z-index: 50; } /* passe devant la photo */
+
+/* options de layout des boutons de contact */
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
