@@ -8,29 +8,12 @@
   <script defer src="assets/script.js"></script>
 </head>
 <body>
+  <!-- ===== Header : logo + marque + langues (PAS de réseaux ici) ===== -->
   <header class="header">
     <div class="container nav">
       <div class="logo">
         <img src="assets/mediterranea_logo_icon.png" alt="Logo Mediterranea" />
         <div class="brand" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</div>
-        <!-- CONTACT -->
-<div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
-  <!-- Bouton E-mail : affiche l’adresse obfusquée + Copier, puis disparaît -->
-  <div class="email-pop">
-    <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
-    <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
-      <div class="email-row">
-        <span id="emailText" class="email-text"></span>
-        <button class="copy-btn" onclick="copyEmail()">Copier</button>
-      </div>
-    </div>
-  </div>
-
-  <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
-  <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
-</div>
-
       </div>
       <div class="lang-switch">
         <button data-lang="fr" class="active" onclick="switchLang('fr')">FR</button>
@@ -40,17 +23,18 @@
     </div>
   </header>
 
+  <!-- ===== Hero : titre + bloc contact (unique) + photo ===== -->
   <main class="hero">
     <div class="container hero-grid">
-      <!-- Colonne gauche (texte + contacts) -->
+      <!-- Colonne gauche -->
       <div>
         <div class="tag" data-i18n="tagline">Votre partenaire immobilier en Méditerranée</div>
         <h1>Mediterranea Property Consulting</h1>
         <p class="sub" data-i18n="consulting">PROPERTY CONSULTING - by Serafina LOGGIA</p>
 
-        <!-- CONTACTS : bloc unique, propre -->
+        <!-- CONTACT (UN SEUL BLOC) -->
         <div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
-          <!-- Bouton E-mail (obfusqué + copie + disparition) -->
+          <!-- Bouton E-mail (affiche adresse obfusquée + Copier, puis disparaît) -->
           <div class="email-pop">
             <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
             <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
@@ -67,7 +51,7 @@
         </div>
       </div>
 
-      <!-- Colonne droite (photo) -->
+      <!-- Colonne droite -->
       <div class="hero-card">
         <img src="assets/my_pic.jpeg" alt="Serafina LOGGIA" />
       </div>
