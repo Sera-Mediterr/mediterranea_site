@@ -41,7 +41,16 @@
           <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank">LinkedIn</a>
           <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank">Instagram</a>
           <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank">WhatsApp</a>
-        </div>
+          <div class="email-pop" style="margin-top:20px">
+  <button class="btn btn-primary" onclick="revealEmail()">E-mail</button>
+  <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
+    <div class="email-row">
+      <span id="emailText" class="email-text"></span>
+      <button class="copy-btn" onclick="copyEmail()">Copier</button>
+    </div>
+  </div>
+</div>
+        /div>
       </div>
       <div class="hero-card">
         <img src="assets/my_pic.jpeg" alt="Serafina LOGGIA">
