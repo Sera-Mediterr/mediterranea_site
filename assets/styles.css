@@ -51,3 +51,7 @@ a:hover{text-decoration:underline}
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr;gap:20px}
 }
+/* --- Fix visibilité bouton e-mail --- */
+.email-pop { display: inline-block !important; position: relative; }
+#emailBox { display: none; }
+.email-box { z-index: 50; } /* pour passer devant la photo */
