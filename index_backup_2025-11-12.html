@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mediterranea Property Consulting</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <!-- ===== Header : logo + marque + langues ===== -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="assets/mediterranea_logo_icon.png" alt="Logo Mediterranea" />
+        <div class="brand">PROPERTY CONSULTING – by Serafina LOGGIA</div>
+      </div>
+      <div class="lang-switch">
+        <button data-lang="fr" class="active" onclick="switchLang('fr')">FR</button>
+        <button data-lang="en" onclick="switchLang('en')">EN</button>
+        <button data-lang="it" onclick="switchLang('it')">IT</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero : titre + contact + photo ===== -->
+  <main class="hero">
+    <div class="container hero-grid">
+      <!-- Colonne gauche -->
+      <div>
+        <div class="tag" data-i18n="tagline">Votre partenaire immobilier en Méditerranée</div>
+        <h1>Mediterranea Property Consulting</h1>
+
+        <!-- Petit sous-titre différent (plus de doublon) -->
+        <p class="sub" data-i18n="subtitle">
+  Conseil acheteur (FR–EN–IT). Spécialiste Espagne & Maroc : recherche, analyse, visites, négociation, sécurisation jusqu’à l’acte.
+</p>
+
+       <!-- CONTACT — bloc unique -->
+<div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
+  <!-- Bouton E-mail (affiche adresse obfusquée + Copier, puis disparaît) -->
+  <div class="email-pop">
+  <!-- Remplace le <button> par un <a> stylé comme les autres -->
+  <a href="#" class="btn btn-outline" onclick="revealEmail(); return false;">E-mail</a>
+  <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
+    <div class="email-row">
+      <span id="emailText" class="email-text"></span>
+      <button class="copy-btn" onclick="copyEmail()">Copier</button>
+    </div>
+  </div>
+</div>
+
+  <a href="https://www.linkedin.com/in/serafinal/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://www.instagram.com/mediterraneapropertyco/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://wa.me/33781649929" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+        <!-- PITCH / À PROPOS -->
+        <section class="section" style="padding-top:0;border-top:none">
+          <h2 data-i18n="about_title">À propos</h2>
+          <p data-i18n="about_body">
+            Je m'appelle Serafina LOGGIA. J’accompagne les personnes souhaitant
+            investir ou se relocaliser au soleil, en Espagne ou au Maroc. Mon approche :
+            sélection exigeante des biens, explications claires des démarches, négociation
+            au service de vos intérêts, et un suivi humain jusqu’à l’installation.
+          </p>
+
+          <h2 style="margin-top:18px" data-i18n="services_title">Ce que j’apporte</h2>
+        <div class="grid-3">
+  <button class="card link-card" data-modal="m1">
+    <h3>Recherche ciblée & présélection</h3>
+  </button>
+
+  <button class="card link-card" data-modal="m2">
+    <h3>Visites (présentiel / vidéo) & comptes rendus</h3>
+  </button>
+
+  <button class="card link-card" data-modal="m3">
+    <h3>Négociation & sécurisation jusqu’à l’acte</h3>
+  </button>
+
+  <button class="card link-card" data-modal="m4">
+    <h3>Coordination locale (notaires, trad, démarches)</h3>
+  </button>
+</div>
+
+      <!-- Colonne droite -->
+      <div class="hero-card">
+        <img src="assets/my_pic.jpeg" alt="Serafina LOGGIA" />
+      </div>
+    </div>
+  </main>
+  <!-- Modales de détail -->
+<div id="m1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m1t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m1t">Recherche ciblée & présélection</h3>
+    <p>Brief précis (budget, lieux, critères). Veille Espagne/Maroc, filtrage des annonces, vérifications de base, shortlist documentée.</p>
+    <ul>
+      <li>Cartographie quartiers / micro-marchés</li>
+      <li>Repérage opportunités / signaux d’alerte</li>
+      <li>Pré-questions aux agences / vendeurs</li>
+    </ul>
+  </div>
+</div>
+
+<div id="m2" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m2t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m2t">Visites (présentiel / vidéo) & comptes rendus</h3>
+    <p>Organisation, check-list sur site, vidéo si besoin, compte rendu structuré (points forts / faibles, budget travaux, contexte).</p>
+  </div>
+</div>
+
+<div id="m3" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m3t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m3t">Négociation & sécurisation jusqu’à l’acte</h3>
+    <p>Stratégie d’offre, négociation, coordination notaire/avocat, délais, clauses, acompte, traduction si besoin — jusqu’à la signature.</p>
+  </div>
+</div>
+
+<div id="m4" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m4t">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" tabindex="-1">
+    <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+    <h3 id="m4t">Coordination locale</h3>
+    <p>Réseau Espagne & Maroc : notaires, avocats, banques, traductions, ouverture de comptes/contrats, adresses utiles.</p>
+  </div>
+</div>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <p>© Mediterranea Property Consulting – Serafina LOGGIA</p>
+    </div>
+  </footer>
+</body>
+</html>
