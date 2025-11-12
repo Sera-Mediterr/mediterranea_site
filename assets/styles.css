@@ -239,6 +239,13 @@ a:hover{text-decoration:underline}
   grid-column: 2;
   align-self: start;
 }
+/* Évite que la photo recouvre le texte À propos */
+@media (min-width: 900px) {
+    main + .section {
+        margin-top: 120px;
+    }
+}
+
 
 /* Le bloc "À propos / Ce que j’apporte" (qui a .section)
    passe EN DESSOUS des deux colonnes du hero */
