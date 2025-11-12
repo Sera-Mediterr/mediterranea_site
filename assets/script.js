@@ -113,20 +113,20 @@ document.addEventListener('click', (e) => {
   e.preventDefault();
   el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
-// --- Afficher et copier l'adresse e-mail ---
-function revealEmail() {
-  const box = document.getElementById('emailBox');
-  if (box) box.style.display = 'block';
+// Affiche la bonne boîte (Top/Bottom) et masque le bouton déclencheur
+function revealEmail(place) {
+  const box = document.getElementById('emailBox' + place);
+  const btn = document.getElementById('showEmail' + place);
+  if (box && btn) {
+    box.style.display = 'block';
+    btn.style.display = 'none';
+  }
 }
 
+// Copie l'adresse réelle dans le presse-papiers
 function copyEmail() {
-  const email = "MediterraneaPropertyConsulting@proton.me";
+  const email = 'MediterraneaPropertyConsulting@proton.me';
   navigator.clipboard.writeText(email)
-    .then(() => {
-      alert("Adresse copiée : " + email);
-    })
-    .catch(err => {
-      console.error("Impossible de copier l’adresse", err);
-    });
+    .then(() => alert('Adresse copiée : ' + email))
+    .catch(() => alert('Copie impossible, note l’adresse : ' + email));
 }
-
