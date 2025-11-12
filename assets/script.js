@@ -130,3 +130,24 @@ function copyEmail() {
     .then(() => alert('Adresse copiée : ' + email))
     .catch(() => alert('Copie impossible, note l’adresse : ' + email));
 }
+// Affiche un petit bloc e-mail contextuel (suffix = 'tem', etc.)
+function showEmailBox(suffix) {
+  const link = document.getElementById('emailLink-' + suffix);
+  const box  = document.getElementById('emailBox-' + suffix);
+  if (link) link.style.display = 'none';
+  if (box)  box.style.display  = 'block';
+}
+
+// Copie l'adresse depuis un span spécifique (par défaut conserve l'ancienne API)
+function copyEmail(spanId = 'emailText') {
+  const el = document.getElementById(spanId);
+  if (!el) return;
+  const txt = el.innerText.replace('[a]', '@');
+  navigator.clipboard.writeText(txt)
+    .then(() => {
+      // petit feedback discret
+      el.closest('.email-box')?.classList.add('copied');
+      setTimeout(() => el.closest('.email-box')?.classList.remove('copied'), 1200);
+    })
+    .catch(() => alert('Impossible de copier. Copiez manuellement : ' + txt));
+}
