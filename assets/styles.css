@@ -226,3 +226,36 @@ a:hover{text-decoration:underline}
   .email-box { width: 100%; }
   .cta-row { flex-direction: column; align-items: stretch; }
 }
+/* === HERO : grille propre, alignement en haut === */
+.hero .container.hero-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;  /* gauche plus large que droite */
+  column-gap: 56px;
+  align-items: start;                  /* aligne tout en haut */
+}
+
+/* La carte photo reste en colonne 2, en haut */
+.hero .hero-card{
+  grid-column: 2;
+  align-self: start;
+}
+
+/* Le bloc "À propos / Ce que j’apporte" (qui a .section)
+   passe EN DESSOUS des deux colonnes du hero */
+.hero .container.hero-grid > .section{
+  grid-column: 1 / -1;   /* occupe toute la largeur */
+  margin-top: 28px;      /* un petit air, mais sans trou */
+}
+
+/* Resserre un peu la tête du héros */
+.tag{ margin-bottom: 8px; }
+.hero h1{ margin-top: 6px; margin-bottom: 16px; }
+
+/* Cartes "Ce que j’apporte" : écart régulier */
+.grid-3{ gap: 16px; }
+
+/* Espace cohérent entre les blocs CTA / e-mail */
+.cta-row{ gap: 12px; margin-top: 12px; }
+
+/* Option : réduit légèrement la marge haute du header si besoin
+.header { padding-top: 18px; } */
