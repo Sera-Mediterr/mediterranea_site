@@ -37,14 +37,15 @@
 </p>
 
        <!-- CONTACT — bloc unique -->
-<div class="cta-row" id="contact-buttons" style="margin:14px 0 22px">
-  <!-- Bouton E-mail (affiche adresse obfusquée + Copier, puis disparaît) -->
-  <div class="email-pop">
-  <!-- Remplace le <button> par un <a> stylé comme les autres -->
-  <a href="#" class="btn btn-outline" onclick="revealEmail(); return false;">E-mail</a>
-  <div id="emailBox" class="email-box" aria-live="polite" style="display:none;">
+<div class="email-pop">
+  <a id="showEmailTop"
+     href="#"
+     class="btn btn-outline"
+     onclick="revealEmail('Top'); return false;">E-mail</a>
+
+  <div id="emailBoxTop" class="email-box" aria-live="polite" style="display:none;">
     <div class="email-row">
-      <span id="emailText" class="email-text"></span>
+      <span id="emailTextTop" class="email-text">MediterraneaPropertyConsulting[a]proton.me</span>
       <button class="copy-btn" onclick="copyEmail()">Copier</button>
     </div>
   </div>
@@ -272,13 +273,17 @@
     <div class="cta-row">
      <!-- Bloc e-mail sécurisé (copie en un clic) -->
 <div class="email-pop" style="margin:16px 0">
-  <button class="btn btn-primary btn-lg" onclick="revealEmail()">Afficher l’adresse</button>
-  <div id="emailBox" class="email-box" style="display:none;margin-top:10px;">
+  <button id="showEmailBottom" class="btn btn-primary btn-lg"
+          onclick="revealEmail('Bottom')">Afficher l’adresse</button>
+
+  <div id="emailBoxBottom" class="email-box" style="display:none;margin-top:10px;">
     <div class="email-row">
-      <span id="emailText" class="email-text">MediterraneaPropertyConsulting[a]proton.me</span>
+      <span id="emailTextBottom" class="email-text">MediterraneaPropertyConsulting[a]proton.me</span>
       <button class="copy-btn" onclick="copyEmail()">Copier</button>
     </div>
-    <small style="display:block;margin-top:6px;color:#666;">(Remplace [a] par @ dans ta messagerie)</small>
+    <small style="display:block;margin-top:6px;color:#666;">
+      (Remplace [a] par @ dans ta messagerie)
+    </small>
   </div>
 </div>
 
