@@ -113,4 +113,20 @@ document.addEventListener('click', (e) => {
   e.preventDefault();
   el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+// --- Afficher et copier l'adresse e-mail ---
+function revealEmail() {
+  const box = document.getElementById('emailBox');
+  if (box) box.style.display = 'block';
+}
+
+function copyEmail() {
+  const email = "MediterraneaPropertyConsulting@proton.me";
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      alert("Adresse copiée : " + email);
+    })
+    .catch(err => {
+      console.error("Impossible de copier l’adresse", err);
+    });
+}
 
