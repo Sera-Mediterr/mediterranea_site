@@ -259,3 +259,35 @@ a:hover{text-decoration:underline}
 
 /* Option : réduit légèrement la marge haute du header si besoin
 .header { padding-top: 18px; } */
+/* === Ajustement photo (hero-card) === */
+
+.hero {
+  position: relative;
+}
+
+.hero-card {
+  position: absolute;
+  top: 10px;
+  right: 6%;
+  width: 230px;           /* taille réduite */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.hero-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Pour que les boutons ne soient pas cachés sur petits écrans */
+@media (max-width: 900px) {
+  .hero-card {
+    position: static;
+    width: 70%;
+    margin: 20px auto 0;
+    display: block;
+  }
+}
+
