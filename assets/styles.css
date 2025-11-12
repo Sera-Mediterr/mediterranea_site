@@ -275,19 +275,47 @@ a:hover{text-decoration:underline}
   box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
+/* === PHOTO PRO : intégrée et équilibrée === */
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Le portrait accompagne le texte à droite */
+.hero-card {
+  width: 260px;             /* taille plus naturelle */
+  margin-left: 40px;
+  margin-top: -10px;        /* remonte légèrement */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+  flex-shrink: 0;           /* ne rétrécit pas */
+}
+
 .hero-card img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Pour que les boutons ne soient pas cachés sur petits écrans */
-@media (max-width: 900px) {
-  .hero-card {
-    position: static;
-    width: 70%;
-    margin: 20px auto 0;
-    display: block;
-  }
+/* Ajuste la colonne texte à gauche */
+.hero .container.hero-grid > div:first-child {
+  flex: 1;
+  min-width: 420px;
 }
 
+/* Mobile : photo centrée sous le texte */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-card {
+    width: 70%;
+    margin: 20px auto 0;
+  }
+}
