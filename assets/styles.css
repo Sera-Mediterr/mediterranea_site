@@ -113,3 +113,43 @@ a:hover{text-decoration:underline}
   position: absolute; top: 8px; right: 12px; border: 0; background: transparent;
   font-size: 28px; line-height: 1; cursor: pointer;
 }
+/* === Ajouts légers pour nouvelles sections === */
+.section { padding: 48px 0; }
+.section-alt { background: #f7f7f7; }
+
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0,0,0,0); border:0;
+}
+
+.cta-row { display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+.btn-lg { padding:14px 24px; font-size:18px; }
+.cta-top { border-top:1px solid #eee; }
+.cta-bottom { border-top:1px solid #eee; border-bottom:1px solid #eee; }
+
+.grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap:24px; }
+.grid-3 { display:grid; grid-template-columns: repeat(3,1fr); gap:24px; }
+@media (max-width: 900px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+.cards .card {
+  background:#fff; border:1px solid #eee; border-radius:12px; padding:18px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+.card-emoji { font-size:32px; line-height:1; margin-bottom:8px; }
+
+.features .check { list-style:none; margin:0; padding:0; }
+.features .check li { padding-left:24px; position:relative; margin:8px 0; }
+.features .check li:before {
+  content:"✓"; color:#2a8f5b; position:absolute; left:0; top:0;
+}
+
+.kpi-table { border:1px solid #eee; border-radius:12px; overflow:hidden; }
+.kpi-row { display:grid; grid-template-columns: 1fr 1fr; }
+.kpi-head { background:#fafafa; font-weight:600; }
+.kpi-cell { padding:14px 16px; border-top:1px solid #eee; }
+.kpi-row:first-child .kpi-cell { border-top:none; }
+
+.note { background:#fff9e6; border:1px solid #ffe2a8; padding:12px 14px; border-radius:8px; }
+.muted { color:#666; }
