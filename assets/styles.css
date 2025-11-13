@@ -1074,3 +1074,59 @@ a:hover{text-decoration:underline}
   justify-content:center !important;
   white-space:nowrap !important;
 }
+/* === HERO : style "pills" colorés pour les boutons de contact === */
+
+.hero-contact {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Chaque bouton (y compris E-mail) devient une "pill" */
+.hero-contact > .email-pop,
+.hero-contact > a.btn {
+  border-radius: 999px;
+}
+
+.hero-contact > .email-pop > a.btn,
+.hero-contact > a.btn {
+  padding: 0 32px;
+  min-width: 160px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Couleurs par canal */
+.hero-contact > .email-pop > a.btn {
+  background: #145c7a;            /* E-mail : bleu pétrole */
+}
+
+.hero-contact > a.btn[href*="linkedin.com"] {
+  background: #0a66c2;            /* Bleu LinkedIn */
+}
+
+.hero-contact > a.btn[href*="instagram.com"] {
+  background: linear-gradient(90deg,#f58529,#dd2a7b,#8134af,#515bd4); /* dégradé Instagram */
+}
+
+.hero-contact > a.btn[href*="wa.me"] {
+  background: #25d366;            /* Vert WhatsApp */
+}
+
+/* Effet hover léger */
+.hero-contact > .email-pop > a.btn:hover,
+.hero-contact > a.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(15,23,42,.18);
+  cursor: pointer;
+}
