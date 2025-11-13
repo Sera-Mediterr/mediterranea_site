@@ -24,79 +24,86 @@
   </header>
 
   <!-- ===== Hero : titre + contact + photo ===== -->
-  <main class="hero">
-    <div class="container hero-grid">
-      <!-- Colonne gauche : texte + boutons de contact -->
-      <div class="hero-left">
-        <div class="tag" data-i18n="tagline">
-          Votre partenaire immobilier en Méditerranée
+ <!-- ===== Hero : titre + contact ===== -->
+<main class="hero">
+  <div class="container hero-grid">
+    <!-- Colonne unique : texte + boutons de contact -->
+    <div class="hero-left">
+      <div class="tag" data-i18n="tagline">
+        Votre partenaire immobilier en Méditerranée
+      </div>
+
+      <h1>Mediterranea Property Consulting</h1>
+
+      <p class="sub" data-i18n="subtitle">
+        Conseil acheteur (FR–EN–IT). Spécialiste Espagne & Maroc : recherche,
+        analyse, visites, négociation, sécurisation jusqu’à l’acte.
+      </p>
+
+      <div class="hero-contact">
+        <!-- Bouton E-mail -->
+        <div class="email-pop">
+          <a
+            id="showEmailTop"
+            href="#"
+            class="btn btn-outline"
+            onclick="revealEmail('Top'); return false;"
+          >
+            E-mail
+          </a>
+          <div
+            id="emailBoxTop"
+            class="email-box"
+            aria-live="polite"
+            style="display:none;"
+          >
+            <div class="email-row">
+              <span id="emailTextTop" class="email-text">
+                MediterraneaPropertyConsulting[a]proton.me
+              </span>
+              <button class="copy-btn" onclick="copyEmail('Top')">
+                Copier
+              </button>
+            </div>
+            <small style="display:block;margin-top:6px;color:#666;">
+              (Remplace [a] par @ dans ta messagerie)
+            </small>
+          </div>
         </div>
 
-        <h1>Mediterranea Property Consulting</h1>
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/serafinal/"
+          class="btn btn-outline"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
 
-        <p class="sub" data-i18n="subtitle">
-          Conseil acheteur (FR–EN–IT). Spécialiste Espagne & Maroc :
-          recherche, analyse, visites, négociation, sécurisation jusqu’à l’acte.
-        </p>
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/mediterraneapropertyco/"
+          class="btn btn-outline"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
 
-        <!-- Boutons de contact sous le texte -->
-      <div class="hero-contact">
-
-  <!-- Bouton E-mail -->
-  <div class="email-pop">
-    <a id="showEmailTop"
-       href="#"
-       class="btn btn-outline"
-       onclick="revealEmail('Top'); return false;">
-      E-mail
-    </a>
-    <div id="emailBoxTop"
-         class="email-box"
-         aria-live="polite"
-         style="display:none;">
-      <div class="email-row">
-        <span id="emailTextTop" class="email-text">
-          MediterraneaPropertyConsulting[a]proton.me
-        </span>
-        <button class="copy-btn" onclick="copyEmail('Top')">
-          Copier
-        </button>
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/33781649929"
+          class="btn btn-outline"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
       </div>
-      <small style="display:block;margin-top:6px;color:#666;">
-        (Remplace [a] par @ dans ta messagerie)
-      </small>
     </div>
   </div>
-
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/serafinal/"
-     class="btn btn-outline"
-     target="_blank"
-     rel="noopener">
-    LinkedIn
-  </a>
-
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/mediterraneapropertyco/"
-     class="btn btn-outline"
-     target="_blank"
-     rel="noopener">
-    Instagram
-  </a>
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/33781649929"
-     class="btn btn-outline"
-     target="_blank"
-     rel="noopener">
-    WhatsApp
-  </a>
-</div>
-
-      <!-- Colonne droite : photo seule dans une carte -->
-      
-    </div>
-  </main>
+</main>
 
         <!-- PITCH / À PROPOS -->
         <section id="about" class="section about-grid">
