@@ -42,17 +42,13 @@
 
       <div class="hero-contact" id="hero-contact">
         <!-- Bouton E-mail -->
-        <div class="email-pop">
-  <a id="showEmailTop"
-     href="#"
-     class="btn btn-outline"
-     onclick="revealEmail('Top'); return false;">
+       <details class="email-pop">
+  <summary class="btn btn-outline">
     E-mail
-  </a>
+  </summary>
   <div id="emailBoxTop"
        class="email-box"
-       aria-live="polite"
-       style="display:none;">
+       aria-live="polite">
     <div class="email-row">
       <span id="emailTextTop" class="email-text">
         MediterraneaPropertyConsulting[a]proton.me
@@ -65,8 +61,9 @@
       (Remplace [a] par @ dans ta messagerie)
     </small>
   </div>
-</div>
+</details>
 
+        
         <!-- LinkedIn -->
         <a
           href="https://www.linkedin.com/in/serafinal/"
