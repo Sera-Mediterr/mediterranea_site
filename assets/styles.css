@@ -927,6 +927,29 @@ a:hover{text-decoration:underline}
     flex-wrap: wrap !important;        /* sur petits écrans, les boutons peuvent repasser sur 2 lignes */
   }
 }
+/* Fix spécifique du bouton E-mail dans le hero */
+.hero-contact{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+}
+
+.hero-contact > .email-pop{
+  margin:0 !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:stretch !important;
+}
+
+.hero-contact > .email-pop > a.btn{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:170px !important;
+  height:56px !important;
+  white-space:nowrap !important;
+}
 
   .hero-card {
     max-width: 420px;
