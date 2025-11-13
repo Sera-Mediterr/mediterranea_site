@@ -25,15 +25,131 @@ a:hover{text-decoration:underline}
 .btn-outline{border-color:var(--deep-sea);color:var(--deep-sea);background:#fff}
 .btn:hover{opacity:.92}
 /* hero */
-.hero{padding:60px 0}
-.hero-grid{display:flex;align-items:center;justify-content:space-between;gap:40px}
-.hero-right{flex:0 0 320px;display:flex;justify-content:flex-start}
-.hero-left{flex:1 1 55%;max-width:650px}
-.hero h1{font-family:'Playfair Display',serif;font-size:44px;line-height:1.1;margin:0 0 12px}
-.hero .sub{font-size:18px;color:#4b5563;margin-bottom:24px}
-.tag{display:inline-block;background:var(--sand);color:#6b3e2e;border:1px dashed #d5b8a4;padding:6px 10px;border-radius:999px;margin-bottom:16px;font-weight:600}
-.hero-card{background:none;border:none;border-radius:0;padding:0;box-shadow:none}
-.hero img{width:100%;height:auto;border-radius:18px;border:none}
+.hero{
+  padding:80px 0 64px;
+}
+
+/* 2 colonnes en flex */
+.hero-grid{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:40px;
+}
+
+/* titre & texte : on garde tes réglages */
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:44px;
+  line-height:1.1;
+  margin:0 0 12px;
+}
+
+.hero .sub{
+  font-size:18px;
+  color:#4b5563;
+  margin-bottom:24px;
+}
+
+.tag{
+  display:inline-block;
+  background:var(--sand);
+  color:#6b3e2e;
+  border:1px dashed #d5ba84;
+  padding:6px 10px;
+  border-radius:999px;
+  margin-bottom:16px;
+  font-weight:500;
+}
+
+/* >>> ICI on enlève VRAIMENT le cadre et l’ombre <<< */
+.hero-card{
+  background:transparent;
+  border:none;
+  border-radius:0;
+  padding:0;
+  box-shadow:none;
+  max-width:420px;
+  width:100%;
+}
+
+/* l’image seule, sans bordure blanche */
+.hero img{
+  width:100%;
+  height:auto;
+  border:none;
+  border-radius:24px;
+  object-fit:cover;
+}
+
+/* colonnes gauche/droite */
+.hero-left{
+  flex:1 1 50%;
+  max-width:650px;
+}
+
+.hero-right{
+  flex:0 1 420px;
+  display:flex;
+  justify-content:flex-end;
+}
+/* Boutons de contact alignés */
+.hero-contact{
+  margin-top:32px;
+  display:flex;
+  flex-wrap:nowrap;
+  gap:16px;
+  justify-content:center;
+}
+
+/* LinkedIn / Instagram / WhatsApp */
+.hero-contact > a.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:170px;
+  height:56px;
+  white-space:nowrap;
+}
+
+/* E-mail (wrapper + bouton à l’intérieur) */
+.hero-contact > .email-pop{
+  display:flex;
+  align-items:stretch;
+}
+/* Quand la fenêtre est moins large, on empile la photo au-dessus du texte */
+@media (max-width: 1300px){
+  .hero-grid{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:32px;
+  }
+
+  .hero-right{
+    order:-1;          /* photo AU-DESSUS */
+    justify-content:center;
+    width:100%;
+  }
+
+  .hero-card{
+    max-width:380px;
+    margin:0 auto;
+  }
+
+  .hero-contact{
+    flex-wrap:wrap;    /* sur petit écran, les boutons peuvent passer sur 2 lignes */
+  }
+}
+
+.hero-contact > .email-pop > a.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:170px;
+  height:56px;
+  white-space:nowrap;
+}
+
 /* sections */
 .section{padding:40px 0;border-top:1px solid #f2f2f2}
 .section h2{font-family:'Playfair Display',serif;font-size:28px;margin:0 0 16px}
