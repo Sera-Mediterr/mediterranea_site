@@ -1131,3 +1131,14 @@ a:hover{text-decoration:underline}
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+/* === Centrage brutal du texte dans les pills du HERO === */
+.hero-contact .btn,
+.hero-contact .email-pop > a.btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 56px !important;
+  line-height: 56px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
