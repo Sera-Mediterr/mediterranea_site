@@ -292,11 +292,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // ===== GESTION E-MAIL (HÉRO + TÉMOIGNAGES) =====
 
 // Affiche la boîte e-mail du héros (Top)
-function revealEmail(place) {
-  const box = document.getElementById("emailBox" + place);
-  const btn = document.getElementById("showEmail" + place);
-  if (box) box.style.display = "block";
-  if (btn) btn.style.display = "none";
+function revealEmail(tag) {
+  const box = document.getElementById("emailBox" + tag);
+  if (!box) return;
+
+  // Toggle
+  if (box.style.display === "none" || box.style.display === "") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
 }
 
 // Affiche la petite boîte pour les témoignages
