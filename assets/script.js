@@ -112,6 +112,27 @@ function showEmailBox(suffix) {
   const box = document.getElementById("emailBox-" + suffix);
   if (link) link.style.display = "none";
   if (box) box.style.display = "block";
+// --- Copie une adresse e-mail depuis un span dédié ---
+// spanId = l'ID du <span> contenant l'adresse obfusquée
+function copyEmail(spanId = 'emailText') {
+  const el = document.getElementById(spanId);
+  if (!el) return;
+
+  // remplace [a] par @ pour la copie
+  const txt = el.innerText.trim().replace('[a]', '@');
+
+  navigator.clipboard.writeText(txt)
+    .then(() => {
+      // petit feedback visuel discret
+      const box = el.closest('.email-box');
+      if (box) {
+        box.classList.add('copied');
+        setTimeout(() => box.classList.remove('copied'), 1200);
+      }
+    })
+    .catch(() => {
+      alert("Impossible de copier. Copiez manuellement : " + txt);
+    });
 }
 
 // === Modales : ouverture / fermeture ===
