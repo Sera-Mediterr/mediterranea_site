@@ -570,3 +570,32 @@ a:hover{text-decoration:underline}
     margin:0 auto;
   }
 }
+/* Force les boutons du HERO à rester alignés proprement */
+.hero-contact .btn,
+.hero-contact .email-pop {
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  min-width:150px;       /* largeur uniforme */
+  height:52px;           /* hauteur uniforme */
+  font-size:18px;
+  white-space:nowrap;    /* empêche les coupures de ligne */
+}
+
+.hero-contact {
+  flex-wrap:nowrap !important;   /* plus de retour à la ligne */
+  gap:16px !important;           /* espace constant entre boutons */
+}
+/* Supprime le cadre blanc / ombre autour de la photo */
+.hero-card {
+  background:none !important;
+  border:none !important;
+  padding:0 !important;
+  box-shadow:none !important;
+}
+
+.hero-card img {
+  border:none !important;
+  box-shadow:none !important;
+  background:none !important;
+}
