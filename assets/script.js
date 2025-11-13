@@ -1,62 +1,92 @@
-// ---- Traductions (pitch inclus) ----
+// =============================
+//  TRADUCTIONS FR / EN / IT
+// =============================
 const translations = {
   fr: {
+    brand: "PROPERTY CONSULTING – by Serafina LOGGIA",
+    hero_title: "Mediterranea Property Consulting",
+
     tagline: "Votre partenaire immobilier en Méditerranée",
     subtitle:
       "Conseil acheteur (FR–EN–IT). Spécialiste Espagne & Maroc : recherche, analyse, visites, négociation, sécurisation jusqu’à l’acte.",
+
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
+
     services_title: "Ce que j’apporte",
-    s1: "Recherche ciblée & présélection",
-    s2: "Visites (présentiel / vidéo) & comptes rendus",
-    s3: "Négociation & sécurisation jusqu’à l’acte",
-    s4: "Coordination locale (notaires, trad, démarches)",
+    s1_title: "Recherche ciblée & présélection",
+    s2_title: "Visites (présentiel / vidéo) & comptes rendus",
+    s3_title: "Négociation & sécurisation jusqu’à l’acte",
+    s4_title: "Coordination locale (notaires, trad, démarches)",
   },
+
   en: {
-    tagline: "Your Mediterranean buying advisor",
+    brand: "PROPERTY CONSULTING – by Serafina LOGGIA",
+    hero_title: "Mediterranea Property Consulting",
+
+    tagline: "Your Mediterranean real estate partner",
     subtitle:
-      "Buyer’s agent (FR–EN–IT). Focus on Spain & Morocco: search, due diligence, viewings, negotiation, deal security to completion.",
+      "Buyer’s advisor (FR–EN–IT). Focus on Spain & Morocco: search, analysis, viewings, negotiation and deal security up to completion.",
+
     about_title: "About",
     about_body:
-      "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
+      "I’m Serafina LOGGIA. I support buyers who want to invest or relocate to Spain or Morocco. My role: shortlist properties, verify information, organise viewings, negotiate, coordinate all procedures and secure the deal up to completion.",
+
     services_title: "What I deliver",
-    s1: "Targeted search & shortlisting",
-    s2: "Viewings (in-person / video) & reporting",
-    s3: "Negotiation & deal security to completion",
-    s4: "Local coordination (notaries, translations, admin)",
+    s1_title: "Targeted search & shortlisting",
+    s2_title: "Viewings (in-person / video) & reporting",
+    s3_title: "Negotiation & deal security to completion",
+    s4_title: "Local coordination (notaries, translations, admin)",
   },
+
   it: {
-    tagline: "La tua consulente per acquistare nel Mediterraneo",
+    brand: "PROPERTY CONSULTING – by Serafina LOGGIA",
+    hero_title: "Mediterranea Property Consulting",
+
+    tagline: "Il tuo partner immobiliare nel Mediterraneo",
     subtitle:
-      "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, negoziazione, sicurezza fino al rogito.",
+      "Consulenza acquirente (FR–EN–IT). Focus Spagna e Marocco: ricerca, analisi, visite, negoziazione e sicurezza fino al rogito.",
+
     about_title: "Chi sono",
     about_body:
-      "Mi chiamo Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
+      "Sono Serafina LOGGIA. Accompagno chi desidera investire o trasferirsi in Spagna o in Marocco. Il mio ruolo: selezionare gli immobili, verificare le informazioni, organizzare le visite, negoziare, coordinare le pratiche e mettere in sicurezza l’operazione fino al rogito.",
+
     services_title: "Cosa offro",
-    s1: "Ricerca mirata & preselezione",
-    s2: "Visite (presenza / video) & report",
-    s3: "Negoziazione & sicurezza fino al rogito",
-    s4: "Coordinamento locale (notai, traduzioni, pratiche)",
+    s1_title: "Ricerca mirata & preselezione",
+    s2_title: "Visite (in presenza / video) & report",
+    s3_title: "Negoziazione & sicurezza fino al rogito",
+    s4_title: "Coordinamento locale (notai, traduzioni, pratiche)",
   },
 };
 
+// =============================
+//  CHANGEMENT DE LANGUE
+// =============================
 function switchLang(lang) {
+  const dict = translations[lang];
+  if (!dict) return;
+
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const k = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][k] !== undefined) {
-      el.textContent = translations[lang][k];
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] !== undefined) {
+      el.textContent = dict[key];
     }
   });
 
-  document.querySelectorAll(".lang-switch button").forEach((b) => {
-    b.classList.toggle("active", b.dataset.lang === lang);
+  document.querySelectorAll(".lang-switch button").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 }
 
-// ---- E-mail : révéler / copier / masquer ----
+// langue par défaut au chargement
+switchLang("fr");
 
-// Affiche la bonne boîte (Top/Bottom) et masque le bouton déclencheur
+// =============================
+//  EMAIL : AFFICHER / COPIER
+// =============================
+
+// Affiche la boîte e-mail (Top / Bottom) et masque le bouton
 function revealEmail(place) {
   const box = document.getElementById("emailBox" + place);
   const btn = document.getElementById("showEmail" + place);
@@ -64,34 +94,39 @@ function revealEmail(place) {
   if (btn) btn.style.display = "none";
 }
 
-// Copie l'adresse depuis différents contextes
-// - 'Top' / 'Bottom' pour le hero et le CTA bas de page
-// - un id direct (ex: 'emailText-tem') pour les témoignages
+// Affiche un petit bloc e-mail contextuel (témoignages)
+function showEmailBox(suffix) {
+  const link = document.getElementById("emailLink-" + suffix);
+  const box = document.getElementById("emailBox-" + suffix);
+  if (link) link.style.display = "none";
+  if (box) box.style.display = "block";
+}
+
+// Copie l’adresse depuis un span spécifique
+// - cas général : copyEmail('emailText-tem')
+// - cas Top / Bottom : copyEmail('Top') ou copyEmail('Bottom')
+// - sans argument : utilise emailTextBottom par défaut
 function copyEmail(target) {
   let span = null;
-  let box = null;
 
-  if (!target || target === "Top" || target === "Bottom") {
-    const suffix = target || "Bottom";
-    span = document.getElementById("emailText" + suffix);
-    box = document.getElementById("emailBox" + suffix);
+  if (!target) {
+    span = document.getElementById("emailTextBottom");
+  } else if (target === "Top" || target === "Bottom") {
+    span = document.getElementById("emailText" + target);
   } else {
     span = document.getElementById(target);
-    if (span) {
-      box = span.closest(".email-box");
-    }
   }
 
   if (!span) return;
 
-  const text = span.textContent.trim().replace("[a]", "@");
+  const raw = span.innerText.trim();
+  const txt = raw.replace("[a]", "@");
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).catch(() => {});
+    navigator.clipboard.writeText(txt).catch(() => {});
   } else {
-    // fallback vieux navigateurs
     const tmp = document.createElement("textarea");
-    tmp.value = text;
+    tmp.value = txt;
     document.body.appendChild(tmp);
     tmp.select();
     try {
@@ -100,42 +135,15 @@ function copyEmail(target) {
     document.body.removeChild(tmp);
   }
 
-  // on masque la boîte après copie (si présente)
+  const box = span.closest(".email-box");
   if (box) {
     box.style.display = "none";
   }
 }
 
-// Petit bloc e-mail pour les témoignages
-function showEmailBox(suffix) {
-  const link = document.getElementById("emailLink-" + suffix);
-  const box = document.getElementById("emailBox-" + suffix);
-  if (link) link.style.display = "none";
-  if (box) box.style.display = "block";
-// --- Copie une adresse e-mail depuis un span dédié ---
-// spanId = l'ID du <span> contenant l'adresse obfusquée
-function copyEmail(spanId = 'emailText') {
-  const el = document.getElementById(spanId);
-  if (!el) return;
-
-  // remplace [a] par @ pour la copie
-  const txt = el.innerText.trim().replace('[a]', '@');
-
-  navigator.clipboard.writeText(txt)
-    .then(() => {
-      // petit feedback visuel discret
-      const box = el.closest('.email-box');
-      if (box) {
-        box.classList.add('copied');
-        setTimeout(() => box.classList.remove('copied'), 1200);
-      }
-    })
-    .catch(() => {
-      alert("Impossible de copier. Copiez manuellement : " + txt);
-    });
-}
-
-// === Modales : ouverture / fermeture ===
+// =============================
+//  MODALES (cartes de services)
+// =============================
 function openModal(id) {
   const m = document.getElementById(id);
   if (!m) return;
@@ -152,20 +160,30 @@ function closeModal(m) {
 }
 
 document.addEventListener("click", (e) => {
-  // clic sur une carte
+  // ouverture d’une modale via une carte
   const btn = e.target.closest(".link-card");
   if (btn && btn.dataset.modal) {
     e.preventDefault();
     openModal(btn.dataset.modal);
   }
 
-  // clic sur fermer / backdrop
+  // fermeture via les éléments [data-close]
   if (e.target.matches("[data-close]")) {
     closeModal(e.target.closest(".modal"));
   }
+
+  // défilement fluide pour les ancres internes
+  const a = e.target.closest('a[href^="#"]');
+  if (a) {
+    const id = a.getAttribute("href").slice(1);
+    const el = document.getElementById(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
 });
 
-// Escape ferme les modales ouvertes
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     document
@@ -173,17 +191,4 @@ document.addEventListener("keydown", (e) => {
       .forEach((m) => closeModal(m));
   }
 });
-
-// Défilement fluide vers les ancres (#)
-document.addEventListener("click", (e) => {
-  const a = e.target.closest('a[href^="#"]');
-  if (!a) return;
-  const id = a.getAttribute("href").slice(1);
-  const el = document.getElementById(id);
-  if (!el) return;
-  e.preventDefault();
-  el.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-
-// Langue par défaut au chargement
-switchLang("fr");
+Fix script.js
