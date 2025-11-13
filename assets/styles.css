@@ -711,6 +711,106 @@ a:hover{text-decoration:underline}
     justify-content: center;
     width: 100%;
   }
+/* ==== FIX FINAL HERO : alignement boutons + comportement photo ==== */
+
+/* Layout desktop : 2 colonnes, sans chevauchement */
+.hero-grid {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+  flex-wrap: nowrap !important;
+}
+
+.hero-left {
+  flex: 1 1 50% !important;
+  max-width: 650px !important;
+}
+
+.hero-right {
+  flex: 0 1 420px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  position: static !important;
+  margin: 0 !important;
+}
+
+.hero-card {
+  max-width: 420px !important;
+  width: 100% !important;
+  position: static !important;
+  margin: 0 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.hero-card img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  border: none !important;
+  border-radius: 24px !important;
+  object-fit: cover !important;
+}
+
+/* Boutons : même taille pour E-mail et les autres */
+.hero-contact {
+  margin-top: 32px !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 16px !important;
+  justify-content: center !important;
+}
+
+/* Liens simples (LinkedIn / Instagram / WhatsApp) */
+.hero-contact > a.btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 170px !important;
+  height: 56px !important;
+  white-space: nowrap !important;
+}
+
+/* Bouton E-mail (avec son wrapper .email-pop) */
+.hero-contact > .email-pop {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.hero-contact > .email-pop > a.btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 170px !important;
+  height: 56px !important;
+  white-space: nowrap !important;
+}
+
+/* RESPONSIVE : quand la fenêtre rétrécit, on empile la photo au-dessus du texte */
+@media (max-width: 1300px) {
+  .hero-grid {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .hero-right {
+    order: -1 !important;              /* photo au-dessus du texte */
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .hero-card {
+    max-width: 380px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-contact {
+    flex-wrap: wrap !important;        /* sur petits écrans, les boutons peuvent repasser sur 2 lignes */
+  }
+}
 
   .hero-card {
     max-width: 420px;
