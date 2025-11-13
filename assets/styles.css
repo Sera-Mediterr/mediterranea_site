@@ -599,3 +599,101 @@ a:hover{text-decoration:underline}
   box-shadow:none !important;
   background:none !important;
 }
+
+/* === HERO : overrides propres (layout + boutons + photo) === */
+
+/* Mise en page générale du hero */
+.hero {
+  padding: 80px 0 64px;
+}
+
+/* 2 colonnes souples, qui peuvent passer l'une sous l'autre si manque de place */
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  flex-wrap: wrap; /* si l'écran rétrécit, la photo passe dessous au lieu de chevaucher */
+}
+
+/* Colonne gauche : texte */
+.hero-left {
+  flex: 1 1 420px;
+  max-width: 650px;
+}
+
+/* Colonne droite : photo */
+.hero-right {
+  flex: 0 1 420px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* On supprime complètement le cadre / fond / ombre autour de la photo */
+.hero-card {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  max-width: 420px;
+  width: 100%;
+}
+
+.hero-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none !important;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* Boutons de contact : une seule rangée bien alignée */
+.hero-contact {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  justify-content: center; /* centre la rangée sous le texte */
+}
+
+.hero-contact .btn,
+.hero-contact .email-pop {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  height: 52px;
+  white-space: nowrap;
+}
+
+/* Sur mobile : photo au-dessus, plus aucun risque de chevauchement */
+@media (max-width: 900px) {
+  .hero-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-right {
+    order: -1;           /* photo au-dessus du texte */
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .hero-contact {
+    flex-wrap: wrap;     /* sur tout petit écran, les boutons peuvent revenir sur 2 lignes */
+  }
+}
+/* === SUPPRESSION ABSOLUE DE TOUT CADRE / FOND / OMBRE AUTOUR DE LA PHOTO === */
+
+.hero-right,
+.hero-right * {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
