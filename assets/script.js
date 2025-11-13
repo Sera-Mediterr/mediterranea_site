@@ -59,11 +59,46 @@ function revealEmail() {
   box.style.display = "block";
   setTimeout(()=>{ box.style.display = "none"; }, 6000);
 }
-function copyEmail() {
-  const raw = (document.getElementById("emailText").textContent || "");
-  const real = raw.replace("[a]", "@");
-  navigator.clipboard.writeText(real);
-  alert("Adresse copiée !");
+function copyEmail(target) {
+  let span = null;
+  let box = null;
+
+  // 1) Cas "Top" / "Bottom" (hero + contact bas de page)
+  if (!target || target === 'Top' || target === 'Bottom') {
+    const suffix = target || 'Bottom';
+    span = document.getElementById('emailText' + suffix);
+    box  = document.getElementById('emailBox' + suffix);
+  } else {
+    // 2) Cas témoignages : id direct (ex: "emailText-tem")
+    span = document.getElementById(target);
+    if (span) {
+      box = span.closest('.email-box');
+    }
+  }
+
+  if (!span) return;
+
+  // On remplace [a] par @ pour la copie
+  const text = span.textContent.trim().replace('[a]', '@');
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).catch(() => {});
+  } else {
+    // fallback vieux navigateurs
+    const tmp = document.createElement('textarea');
+    tmp.value = text;
+    document.body.appendChild(tmp);
+    tmp.select();
+    try { document.execCommand('copy'); } catch(e) {}
+    document.body.removeChild(tmp);
+  }
+
+  // ➜ on masque la boîte après copie
+  if (box) {
+    box.style.display = 'none';
+  }
+}
+
 }
 
 // Langue par défaut au chargement
