@@ -1,7 +1,7 @@
 // =============================
 //  TRADUCTIONS FR / EN / IT
 // =============================
-const translations = {
+var translations = {
   fr: {
     brand: "PROPERTY CONSULTING – by Serafina LOGGIA",
     hero_title: "Mediterranea Property Consulting",
@@ -14,11 +14,7 @@ const translations = {
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
 
-    services_title: "Ce que j’apporte",
-    s1_title: "Recherche ciblée & présélection",
-    s2_title: "Visites (présentiel / vidéo) & comptes rendus",
-    s3_title: "Négociation & sécurisation jusqu’à l’acte",
-    s4_title: "Coordination locale (notaires, trad, démarches)",
+    services_title: "Ce que j’apporte"
   },
 
   en: {
@@ -33,11 +29,7 @@ const translations = {
     about_body:
       "I’m Serafina LOGGIA. I support buyers who want to invest or relocate to Spain or Morocco. My role: shortlist properties, verify information, organise viewings, negotiate, coordinate all procedures and secure the deal up to completion.",
 
-    services_title: "What I deliver",
-    s1_title: "Targeted search & shortlisting",
-    s2_title: "Viewings (in-person / video) & reporting",
-    s3_title: "Negotiation & deal security to completion",
-    s4_title: "Local coordination (notaries, translations, admin)",
+    services_title: "What I deliver"
   },
 
   it: {
@@ -52,62 +44,59 @@ const translations = {
     about_body:
       "Sono Serafina LOGGIA. Accompagno chi desidera investire o trasferirsi in Spagna o in Marocco. Il mio ruolo: selezionare gli immobili, verificare le informazioni, organizzare le visite, negoziare, coordinare le pratiche e mettere in sicurezza l’operazione fino al rogito.",
 
-    services_title: "Cosa offro",
-    s1_title: "Ricerca mirata & preselezione",
-    s2_title: "Visite (in presenza / video) & report",
-    s3_title: "Negoziazione & sicurezza fino al rogito",
-    s4_title: "Coordinamento locale (notai, traduzioni, pratiche)",
-  },
+    services_title: "Cosa offro"
+  }
 };
 
 // =============================
 //  CHANGEMENT DE LANGUE
 // =============================
 function switchLang(lang) {
-  const dict = translations[lang];
+  var dict = translations[lang];
   if (!dict) return;
 
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) {
+  var nodes = document.querySelectorAll("[data-i18n]");
+  for (var i = 0; i < nodes.length; i++) {
+    var el = nodes[i];
+    var key = el.getAttribute("data-i18n");
+    if (dict.hasOwnProperty(key)) {
       el.textContent = dict[key];
     }
-  });
+  }
 
-  document.querySelectorAll(".lang-switch button").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.lang === lang);
-  });
+  var btns = document.querySelectorAll(".lang-switch button");
+  for (var j = 0; j < btns.length; j++) {
+    var b = btns[j];
+    b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+  }
 }
 
-// langue par défaut au chargement
-switchLang("fr");
-
 // =============================
-//  EMAIL : AFFICHER / COPIER
+//  EMAILS : AFFICHER / COPIER
 // =============================
 
 // Affiche la boîte e-mail (Top / Bottom) et masque le bouton
 function revealEmail(place) {
-  const box = document.getElementById("emailBox" + place);
-  const btn = document.getElementById("showEmail" + place);
+  var box = document.getElementById("emailBox" + place);
+  var btn = document.getElementById("showEmail" + place);
   if (box) box.style.display = "block";
   if (btn) btn.style.display = "none";
 }
 
-// Affiche un petit bloc e-mail contextuel (témoignages)
+// Affiche le bloc e-mail pour les témoignages
 function showEmailBox(suffix) {
-  const link = document.getElementById("emailLink-" + suffix);
-  const box = document.getElementById("emailBox-" + suffix);
+  var link = document.getElementById("emailLink-" + suffix);
+  var box = document.getElementById("emailBox-" + suffix);
   if (link) link.style.display = "none";
   if (box) box.style.display = "block";
 }
 
-// Copie l’adresse depuis un span spécifique
-// - cas général : copyEmail('emailText-tem')
-// - cas Top / Bottom : copyEmail('Top') ou copyEmail('Bottom')
-// - sans argument : utilise emailTextBottom par défaut
+// Copie l’adresse depuis un span donné
+// - copyEmail('Top') ou copyEmail('Bottom') pour les blocs hero / contact
+// - copyEmail('emailText-tem') pour les témoignages
+// - copyEmail() sans argument : utilise emailTextBottom par défaut
 function copyEmail(target) {
-  let span = null;
+  var span;
 
   if (!target) {
     span = document.getElementById("emailTextBottom");
@@ -119,13 +108,13 @@ function copyEmail(target) {
 
   if (!span) return;
 
-  const raw = span.innerText.trim();
-  const txt = raw.replace("[a]", "@");
+  var raw = span.innerText || span.textContent;
+  var txt = raw.replace("[a]", "@");
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(txt).catch(() => {});
+    navigator.clipboard.writeText(txt).catch(function () {});
   } else {
-    const tmp = document.createElement("textarea");
+    var tmp = document.createElement("textarea");
     tmp.value = txt;
     document.body.appendChild(tmp);
     tmp.select();
@@ -135,21 +124,19 @@ function copyEmail(target) {
     document.body.removeChild(tmp);
   }
 
-  const box = span.closest(".email-box");
-  if (box) {
-    box.style.display = "none";
-  }
+  var box = span.closest ? span.closest(".email-box") : null;
+  if (box) box.style.display = "none";
 }
 
 // =============================
-//  MODALES (cartes de services)
+//  MODALES (services)
 // =============================
 function openModal(id) {
-  const m = document.getElementById(id);
+  var m = document.getElementById(id);
   if (!m) return;
   m.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
-  const dlg = m.querySelector(".modal-dialog");
+  var dlg = m.querySelector(".modal-dialog");
   if (dlg) dlg.focus();
 }
 
@@ -159,24 +146,27 @@ function closeModal(m) {
   document.body.style.overflow = "";
 }
 
-document.addEventListener("click", (e) => {
-  // ouverture d’une modale via une carte
-  const btn = e.target.closest(".link-card");
-  if (btn && btn.dataset.modal) {
+document.addEventListener("click", function (e) {
+  // Cartes "Ce que j’apporte"
+  var card = e.target.closest ? e.target.closest(".link-card") : null;
+  if (card && card.dataset && card.dataset.modal) {
     e.preventDefault();
-    openModal(btn.dataset.modal);
+    openModal(card.dataset.modal);
+    return;
   }
 
-  // fermeture via les éléments [data-close]
-  if (e.target.matches("[data-close]")) {
+  // Boutons de fermeture / backdrop
+  if (e.target.matches && e.target.matches("[data-close]")) {
     closeModal(e.target.closest(".modal"));
+    return;
   }
 
-  // défilement fluide pour les ancres internes
-  const a = e.target.closest('a[href^="#"]');
+  // Défilement fluide vers les ancres (#contact, #pour-qui, etc.)
+  var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
   if (a) {
-    const id = a.getAttribute("href").slice(1);
-    const el = document.getElementById(id);
+    var href = a.getAttribute("href");
+    var id = href.slice(1);
+    var el = document.getElementById(id);
     if (el) {
       e.preventDefault();
       el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -184,11 +174,43 @@ document.addEventListener("click", (e) => {
   }
 });
 
-document.addEventListener("keydown", (e) => {
+// Touche ESC pour fermer les modales
+document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
-    document
-      .querySelectorAll('.modal[aria-hidden="false"]')
-      .forEach((m) => closeModal(m));
+    var open = document.querySelectorAll('.modal[aria-hidden="false"]');
+    for (var i = 0; i < open.length; i++) {
+      closeModal(open[i]);
+    }
   }
 });
-Fix script.js
+
+// =============================
+//  REDIRECTION BOUTON GAMMA
+// =============================
+
+// Si tu veux être sûre que le bouton Gamma marche même sans href,
+// tu peux lui ajouter un id dans le HTML (par ex. id="btn-gamma")
+// et décommenter ce bloc :
+
+/*
+document.addEventListener("DOMContentLoaded", function () {
+  var gammaBtn = document.getElementById("btn-gamma");
+  if (gammaBtn) {
+    gammaBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.open(
+        "https://mediterranea-property-co-nvhlz6d.gamma.site/",
+        "_blank"
+      );
+    });
+  }
+});
+*/
+
+// =============================
+//  INIT : langue par défaut
+// =============================
+document.addEventListener("DOMContentLoaded", function () {
+  switchLang("fr");
+});
+Fix full JS
