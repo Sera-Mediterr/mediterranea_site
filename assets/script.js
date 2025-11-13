@@ -185,32 +185,8 @@ document.addEventListener("keydown", function (e) {
 });
 
 // =============================
-//  REDIRECTION BOUTON GAMMA
-// =============================
-
-// Si tu veux être sûre que le bouton Gamma marche même sans href,
-// tu peux lui ajouter un id dans le HTML (par ex. id="btn-gamma")
-// et décommenter ce bloc :
-
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  var gammaBtn = document.getElementById("btn-gamma");
-  if (gammaBtn) {
-    gammaBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      window.open(
-        "https://mediterranea-property-co-nvhlz6d.gamma.site/",
-        "_blank"
-      );
-    });
-  }
-});
-*/
-
-// =============================
 //  INIT : langue par défaut
 // =============================
 document.addEventListener("DOMContentLoaded", function () {
   switchLang("fr");
 });
-Fix full JS
