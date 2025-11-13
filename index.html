@@ -43,33 +43,29 @@
       <div class="hero-contact">
         <!-- Bouton E-mail -->
         <div class="email-pop">
-          <a
-            id="showEmailTop"
-            href="#"
-            class="btn btn-outline"
-            onclick="revealEmail('Top'); return false;"
-          >
-            E-mail
-          </a>
-          <div
-            id="emailBoxTop"
-            class="email-box"
-            aria-live="polite"
-            style="display:none;"
-          >
-            <div class="email-row">
-              <span id="emailTextTop" class="email-text">
-                MediterraneaPropertyConsulting[a]proton.me
-              </span>
-              <button class="copy-btn" onclick="copyEmail('Top')">
-                Copier
-              </button>
-            </div>
-            <small style="display:block;margin-top:6px;color:#666;">
-              (Remplace [a] par @ dans ta messagerie)
-            </small>
-          </div>
-        </div>
+  <a id="showEmailTop"
+     href="#"
+     class="btn btn-outline"
+     onclick="revealEmail('Top'); return false;">
+    E-mail
+  </a>
+  <div id="emailBoxTop"
+       class="email-box"
+       aria-live="polite"
+       style="display:none;">
+    <div class="email-row">
+      <span id="emailTextTop" class="email-text">
+        MediterraneaPropertyConsulting[a]proton.me
+      </span>
+      <button class="copy-btn" onclick="copyEmail('Top')">
+        Copier
+      </button>
+    </div>
+    <small style="display:block;margin-top:6px;color:#666;">
+      (Remplace [a] par @ dans ta messagerie)
+    </small>
+  </div>
+</div>
 
         <!-- LinkedIn -->
         <a
@@ -350,12 +346,18 @@
      <!-- Bloc e-mail sécurisé (copie en un clic) -->
 <div class="email-pop" style="margin:16px 0">
   <button id="showEmailBottom" class="btn btn-primary btn-lg"
-          onclick="revealEmail('Bottom')">Afficher l’adresse</button>
+          onclick="revealEmail('Bottom')">
+    Afficher l’adresse
+  </button>
 
   <div id="emailBoxBottom" class="email-box" style="display:none;margin-top:10px;">
     <div class="email-row">
-      <span id="emailTextBottom" class="email-text">MediterraneaPropertyConsulting[a]proton.me</span>
-      <button class="copy-btn" onclick="copyEmail()">Copier</button>
+      <span id="emailTextBottom" class="email-text">
+        MediterraneaPropertyConsulting[a]proton.me
+      </span>
+      <button class="copy-btn" onclick="copyEmail()">
+        Copier
+      </button>
     </div>
     <small style="display:block;margin-top:6px;color:#666;">
       (Remplace [a] par @ dans ta messagerie)
