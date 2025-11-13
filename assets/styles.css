@@ -1130,3 +1130,51 @@ a:hover{text-decoration:underline}
   box-shadow: 0 10px 25px rgba(15,23,42,.18);
   cursor: pointer;
 }
+/* === HERO : style "pills" colorés pour les boutons de contact === */
+
+.hero-contact {
+  margin-top: 32px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 18px !important;
+  justify-content: center !important;
+}
+
+/* Base commune à tous les boutons du hero (y compris E-mail) */
+.hero-contact .btn,
+.hero-contact .email-pop > a.btn {
+  border-radius: 999px !important;
+  min-width: 170px !important;
+  height: 56px !important;
+  padding: 0 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  border: none !important;
+  color: #fff !important;
+  background: #145c7a !important;      /* couleur par défaut : E-mail */
+  text-decoration: none !important;
+}
+
+/* Couleur LinkedIn */
+.hero-contact a.btn[href*="linkedin.com"] {
+  background: #0a66c2 !important;
+}
+
+/* Couleur WhatsApp */
+.hero-contact a.btn[href*="wa.me"] {
+  background: #25d366 !important;
+}
+
+/* Couleur Instagram : dégradé */
+.hero-contact a.btn[href*="instagram.com"] {
+  background: linear-gradient(
+    90deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  ) !important;
+}
