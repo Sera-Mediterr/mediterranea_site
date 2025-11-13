@@ -956,3 +956,50 @@ a:hover{text-decoration:underline}
     margin: 0 auto;
   }
 }
+/* === FIX ALIGNEMENT BOUTON E-MAIL DANS LE HERO === */
+
+.hero-contact{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:16px !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+}
+
+.hero-contact > a.btn,
+.hero-contact > .email-pop > a.btn{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:170px !important;
+  height:56px !important;
+  white-space:nowrap !important;
+}
+
+/* le wrapper du bouton E-mail ne doit pas ajouter de décalage */
+.hero-contact > .email-pop{
+  margin:0 !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:stretch !important;
+}
+/* === FIX CHEVAUCHEMENT PHOTO : MODE COLONNE SOUS 1500px === */
+
+@media (max-width:1500px){
+  .hero-grid{
+    display:block !important;   /* on casse le flex/grid : chaque bloc prend toute la largeur */
+  }
+
+  .hero-left{
+    max-width:100% !important;
+  }
+
+  .hero-right{
+    margin-top:32px !important;
+    max-width:420px !important;
+  }
+
+  .hero-card{
+    margin:0 auto !important;
+  }
+}
