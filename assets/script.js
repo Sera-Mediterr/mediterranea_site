@@ -8,22 +8,11 @@ const translations = {
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
-        services_title: "Ce que j’apporte",
+    services_title: "Ce que j’apporte",
     s1: "Recherche ciblée & présélection",
     s2: "Visites (présentiel / vidéo) & comptes rendus",
     s3: "Négociation & sécurisation jusqu’à l’acte",
     s4: "Coordination locale (notaires, trad, démarches)",
-
-    // MODALE m1
-    m1_title: "Recherche ciblée & présélection",
-    m1_p1:
-      "Brief précis (budget, lieux, critères). Veille Espagne/Maroc, filtrage des annonces.",
-    m1_li1: "Cartographie quartiers / micro-marchés",
-    m1_li2: "Repérage opportunités / signaux d’alerte",
-    m1_li3: "Pré-questions aux agences / vendeurs",
-
-    // CTA haut
-    cta_hero_btn:
 
     // CTA haut
     cta_hero_btn:
@@ -113,21 +102,11 @@ const translations = {
     about_title: "About",
     about_body:
       "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
-        services_title: "What I deliver",
+    services_title: "What I deliver",
     s1: "Targeted search & shortlisting",
     s2: "Viewings (in-person / video) & reporting",
     s3: "Negotiation & deal security to completion",
     s4: "Local coordination (notaries, translations, admin)",
-
-    // MODAL m1
-    m1_title: "Targeted search & pre-selection",
-    m1_p1:
-      "Detailed brief (budget, areas, criteria). Monitoring in Spain/Morocco, filtering listings.",
-    m1_li1: "Neighbourhood / micro-market mapping",
-    m1_li2: "Spotting opportunities / warning signs",
-    m1_li3: "Pre-screening questions for agencies / sellers",
-
-    cta_hero_btn:
 
     cta_hero_btn:
       "Ready to make your property project real? Get in touch now",
@@ -207,22 +186,11 @@ const translations = {
     about_title: "Chi sono",
     about_body:
       "Sono Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
-        services_title: "Cosa offro",
+    services_title: "Cosa offro",
     s1: "Ricerca mirata & preselezione",
     s2: "Visite (presenza / video) & report",
     s3: "Negoziazione & sicurezza fino al rogito",
     s4: "Coordinamento locale (notai, traduzioni, pratiche)",
-
-    // MODALE m1
-    m1_title: "Ricerca mirata & preselezione",
-    m1_p1:
-      "Brief preciso (budget, zone, criteri). Monitoraggio Spagna/Marocco, filtraggio annunci.",
-    m1_li1: "Mappatura quartieri / micromercati",
-    m1_li2: "Individuazione opportunità / segnali d’allarme",
-    m1_li3: "Domande preliminari ad agenzie / venditori",
-
-    cta_hero_btn:
-
 
     cta_hero_btn:
       "Pronto a concretizzare il tuo progetto immobiliare? Contattami ora",
@@ -318,10 +286,10 @@ function switchLang(lang) {
 
 // langue par défaut + clic sur les boutons de langue
 document.addEventListener("DOMContentLoaded", () => {
-  // Affiche le français au chargement
+  // langue par défaut
   switchLang("fr");
 
-  // Ajoute les événements sur les boutons de langue
+  // clic sur les boutons EN / IT
   document.querySelectorAll(".lang-switch button").forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.dataset.lang;
@@ -331,7 +299,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
 
 // ===== GESTION E-MAIL (HÉRO + TÉMOIGNAGES) =====
 
