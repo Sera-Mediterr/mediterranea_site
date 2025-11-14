@@ -20,6 +20,30 @@ const translations = {
     m1_li1: "Cartographie quartiers / micro-marchés",
     m1_li2: "Repérage opportunités / signaux d’alerte",
     m1_li3: "Pré-questions aux agences / vendeurs",
+    
+    // MODALE m2
+    m2_title: "Visites (présentiel / vidéo) & comptes rendus",
+    m2_p1:
+      "Organisation des visites sur place ou en vidéo. Analyse, avis objectif, points forts/faibles.",
+    m2_li1: "Visites en présentiel ou WhatsApp vidéo",
+    m2_li2: "Vérifications essentielles (environnement, état, copropriété)",
+    m2_li3: "Comptes rendus détaillés & sélection finale",
+
+    // MODALE m3
+    m3_title: "Négociation & sécurisation jusqu’à l’acte",
+    m3_p1:
+      "Préparation du dossier, stratégie de négociation, sécurisation juridique et accompagnement complet jusqu’à la signature finale.",
+    m3_li1: "Stratégie de négociation basée sur le marché",
+    m3_li2: "Analyse juridique & documents clés",
+    m3_li3: "Accompagnement jusqu’à l’acte / rogito",
+
+    // MODALE m4
+    m4_title: "Coordination locale (notaires, trad, démarches)",
+    m4_p1:
+      "Je coordonne toutes les démarches avec les acteurs locaux : notaires, avocats, traducteurs, banques, administration.",
+    m4_li1: "Coordination notariale et juridique",
+    m4_li2: "Traductions officielles & gestion documentaire",
+    m4_li3: "Accompagnement démarches locales (NIE, banques, cadastre)",
 
     // CTA haut
     cta_hero_btn:
@@ -121,6 +145,31 @@ const translations = {
     m1_li1: "Neighbourhood / micro-market mapping",
     m1_li2: "Spotting opportunities / warning signs",
     m1_li3: "Pre-screening questions for agencies / sellers",
+    
+        // MODAL m2
+    m2_title: "Viewings (in-person / video) & reports",
+    m2_p1:
+      "Organisation of in-person or video viewings. Analysis, objective advice, strengths and weaknesses.",
+    m2_li1: "In-person or WhatsApp video viewings",
+    m2_li2: "Key checks (environment, condition, building)",
+    m2_li3: "Detailed reports & final shortlist",
+
+    // MODAL m3
+    m3_title: "Negotiation & legal security to completion",
+    m3_p1:
+      "Preparation, negotiation strategy, legal verification and full support until completion.",
+    m3_li1: "Negotiation strategy based on market analysis",
+    m3_li2: "Legal checks & key documents",
+    m3_li3: "Support until completion / deed",
+
+    // MODAL m4
+    m4_title: "Local coordination (notaries, translations, admin)",
+    m4_p1:
+      "I coordinate all steps with local actors: notaries, lawyers, translators, banks, administration.",
+    m4_li1: "Notarial & legal coordination",
+    m4_li2: "Official translations & documentation",
+    m4_li3: "Support with local admin (NIE, banks, cadastre)",
+
 
     cta_hero_btn:
       "Ready to make your property project real? Get in touch now",
@@ -212,6 +261,30 @@ const translations = {
     m1_li1: "Mappatura quartieri / micromercati",
     m1_li2: "Individuazione opportunità / segnali d’allarme",
     m1_li3: "Domande preliminari ad agenzie / venditori",
+
+        // MODALE m2
+    m2_title: "Visite (presenza / video) & report",
+    m2_p1:
+      "Organizzazione visite sul posto o in video. Analisi, parere obiettivo, punti di forza/debolezza.",
+    m2_li1: "Visite in presenza o video WhatsApp",
+    m2_li2: "Verifiche essenziali (ambiente, stato, condominio)",
+    m2_li3: "Report dettagliati & selezione finale",
+
+    // MODALE m3
+    m3_title: "Negoziazione & sicurezza fino al rogito",
+    m3_p1:
+      "Preparazione dossier, strategia di negoziazione, verifica giuridica e accompagnamento completo fino al rogito.",
+    m3_li1: "Strategia di negoziazione basata sul mercato",
+    m3_li2: "Analisi giuridica & documenti principali",
+    m3_li3: "Assistenza fino al rogito",
+
+    // MODALE m4
+    m4_title: "Coordinamento locale (notai, traduzioni, pratiche)",
+    m4_p1:
+      "Coordino tutte le pratiche con notai, avvocati, traduttori, banche e amministrazione locale.",
+    m4_li1: "Coordinamento notarile e giuridico",
+    m4_li2: "Traduzioni ufficiali & gestione documenti",
+    m4_li3: "Assistenza pratiche locali (NIE, banche, catasto)",
 
 
     cta_hero_btn:
