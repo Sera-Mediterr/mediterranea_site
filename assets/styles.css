@@ -112,6 +112,10 @@ a:hover{text-decoration:underline}
   justify-content:center;
   align-items:center; /* ❤️ ajoute cette ligne */
 }
+.email-pop{
+    display:inline-flex;
+    align-items:center;
+}
 
 /* LinkedIn / Instagram / WhatsApp */
 .hero-contact > a.btn{
