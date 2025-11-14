@@ -35,7 +35,7 @@ const translations = {
       "Préparation du dossier, stratégie de négociation, sécurisation juridique et accompagnement complet jusqu’à la signature finale.",
     m3_li1: "Stratégie de négociation basée sur le marché",
     m3_li2: "Analyse juridique & documents clés",
-    m3_li3: "Accompagnement jusqu’à l’acte / rogito",
+    m3_li3: "Accompagnement jusqu’à l’acte",
 
     // MODALE m4
     m4_title: "Coordination locale (notaires, trad, démarches)",
@@ -60,7 +60,7 @@ const translations = {
       "Gardez votre salaire français, vivez mer & soleil, bureau avec vue, à 2h d’avion de Paris.",
     who_invest_title: "Investisseurs",
     who_invest_text:
-      "Repérez les opportunités avant la foule (Murcie, Maroc 2030…) avec un cadre juridique sécurisé.",
+      "Repérez les opportunités avant la foule (Espagne -Murcie, Maroc 2030…) avec un cadre juridique sécurisé.",
     who_special_btn: "🌞 Spécial Retraités & Télétravailleurs",
 
     // POURQUOI
@@ -107,10 +107,10 @@ const translations = {
     faq_title: "Questions fréquentes",
     faq_q1: "Combien coûtent vos services ?",
     faq_a1:
-      "Je suis rémunérée côté vendeur. Vous ne payez donc rien directement.",
+      "La plupart du temps, je suis rémunérée côté vendeur. Vous ne payez donc rien directement.",
     faq_q2: "Je ne parle pas espagnol/arabe, c’est un problème ?",
     faq_a2:
-      "Non. Je gère tout en français et je m’occupe des traductions de documents.",
+      "Non. Je gère tout en français, anglais, italien et espagnol et je m’occupe des traductions assermentées.",
     faq_q3: "Comment se déroule l’accompagnement ?",
     faq_a3:
       "Brief → recherche ciblée → visites (sur place / vidéo) → négociation → sécurisation juridique → signature.",
@@ -184,7 +184,7 @@ const translations = {
       "Keep your French salary, live by the sea and in the sun, with an office view and only 2 hours from Paris.",
     who_invest_title: "Investors",
     who_invest_text:
-      "Spot opportunities before the crowd (Murcia, Morocco 2030…) with a secure legal framework.",
+      "Spot opportunities before the crowd (Spain -Murcia, Morocco 2030…) with a secure legal framework.",
     who_special_btn: "🌞 Special Retirees & Remote workers",
 
     why_title: "Why invest in Spain or Morocco?",
@@ -196,7 +196,7 @@ const translations = {
     why_es_li5: "Outstanding quality of life",
     why_ma_title: "🇲🇦 Morocco",
     why_ma_li1: "Cost of living ~50% lower than in France",
-    why_ma_li2: "Around 320 days of sunshine per year",
+    why_ma_li2: "At least 320 days of sunshine per year",
     why_ma_li3: "World Cup 2030 → expected value increase",
     why_ma_li4: "Cultural and geographic proximity",
     why_ma_li5: "Very affordable real estate",
@@ -225,10 +225,10 @@ const translations = {
     faq_title: "Frequently asked questions",
     faq_q1: "How much do your services cost?",
     faq_a1:
-      "I am paid by the seller. You therefore don’t pay anything directly.",
+      "I am -most of the time- paid by the seller. You therefore don’t pay anything directly.",
     faq_q2: "I don’t speak Spanish/Arabic – is that a problem?",
     faq_a2:
-      "No. I handle everything in French and take care of document translations.",
+      "No. I handle everything in French, English, Italian & Spanish and I take care of certified translations.",
     faq_q3: "How does the support work?",
     faq_a3:
       "Brief → targeted search → viewings (in person / video) → negotiation → legal security → completion.",
@@ -245,14 +245,14 @@ const translations = {
   it: {
     tagline: "La tua consulente per acquistare nel Mediterraneo",
     subtitle:
-      "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, negoziazione, sicurezza fino al rogito.",
+      "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, trattativa, sicurezza fino al rogito.",
     about_title: "Chi sono",
     about_body:
-      "Sono Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
+      "Mi chiamo Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
     services_title: "Cosa offro",
     s1: "Ricerca mirata & preselezione",
     s2: "Visite (presenza / video) & report",
-    s3: "Negoziazione & sicurezza fino al rogito",
+    s3: "Trattativa & sicurezza fino al rogito",
     s4: "Coordinamento locale (notai, traduzioni, pratiche)",
         // MODALE m1
     m1_title: "Ricerca mirata & preselezione",
@@ -271,10 +271,10 @@ const translations = {
     m2_li3: "Report dettagliati & selezione finale",
 
     // MODALE m3
-    m3_title: "Negoziazione & sicurezza fino al rogito",
+    m3_title: "Trattativa & sicurezza fino al rogito",
     m3_p1:
-      "Preparazione dossier, strategia di negoziazione, verifica giuridica e accompagnamento completo fino al rogito.",
-    m3_li1: "Strategia di negoziazione basata sul mercato",
+      "Preparazione pratica, strategia di trattativa, verifica giuridica e accompagnamento completo fino al rogito.",
+    m3_li1: "Strategia di trattativa basata sul mercato",
     m3_li2: "Analisi giuridica & documenti principali",
     m3_li3: "Assistenza fino al rogito",
 
@@ -313,7 +313,7 @@ const translations = {
     why_es_li5: "Qualità di vita eccellente",
     why_ma_title: "🇲🇦 Marocco",
     why_ma_li1: "Costo della vita ~50% inferiore rispetto alla Francia",
-    why_ma_li2: "Circa 320 giorni di sole all’anno",
+    why_ma_li2: "Almeno 320 giorni di sole all’anno",
     why_ma_li3: "Mondiali 2030 → atteso aumento di valore",
     why_ma_li4: "Prossimità culturale e geografica",
     why_ma_li5: "Immobiliare molto accessibile",
@@ -325,7 +325,7 @@ const translations = {
     guide1_title: "5 errori fatali prima di comprare in Marocco",
     guide1_text:
       "Evita gli errori più comuni: catasto, avvocato, clausole, tempi, caparra…",
-    guide2_title: "Checklist: Comprare in Spagna nel 2025",
+    guide2_title: "Checklist: Acquistare in Spagna nel 2025",
     guide2_text:
       "Checklist chiara: budget, NIE, notaio, fiscalità, banche, tappe chiave…",
     guide3_title: "Fiscalità espatriati: l’essenziale",
@@ -337,20 +337,20 @@ const translations = {
     temoignages_note:
       "Primi clienti attualmente accompagnati. Testimonianze e feedback dettagliati in arrivo.",
     temoignages_intro:
-      "Hai già comprato all’estero? Condividi la tua esperienza:",
+      "Hai già acquistato all’estero? Condividi la tua esperienza:",
     temoignages_link: "invia una testimonianza",
 
     faq_title: "Domande frequenti",
     faq_q1: "Quanto costano i tuoi servizi?",
     faq_a1:
-      "Vengo remunerata dalla parte venditrice. Tu non paghi nulla direttamente.",
+      "I miei servizi sono, nella maggior parte dei casi, remunerati dalla parte venditrice. A te non costa nulla.",
     faq_q2: "Non parlo spagnolo/arabo, è un problema?",
     faq_a2:
-      "No. Gestisco tutto in francese e mi occupo delle traduzioni dei documenti.",
+      "No. Gestisco tutto in francese, inglese e spagnolo e mi occupo delle traduzioni certificate dei documenti.",
     faq_q3: "Come si svolge l’accompagnamento?",
     faq_a3:
-      "Brief → ricerca mirata → visite (in presenza / video) → negoziazione → sicurezza giuridica → rogito.",
-    faq_q4: "Posso ottenere un mutuo come straniero?",
+      "Brief → ricerca mirata → visite (in presenza / video) → trattativa → verifica della sicurezza giuridica → rogito.",
+    faq_q4: "Sono straniero, posso ottenere un mutuo?",
     faq_a4:
       "Sì. Ti metto in contatto con le banche partner in base al tuo profilo.",
 
