@@ -110,6 +110,7 @@ a:hover{text-decoration:underline}
   flex-wrap:nowrap;
   gap:16px;
   justify-content:center;
+  align-items:center; /* ❤️ ajoute cette ligne */
 }
 
 /* LinkedIn / Instagram / WhatsApp */
