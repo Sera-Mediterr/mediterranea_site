@@ -284,10 +284,22 @@ function switchLang(lang) {
   });
 }
 
-// langue par défaut
+// langue par défaut + clic sur les boutons de langue
 document.addEventListener("DOMContentLoaded", () => {
+  // Affiche le français au chargement
   switchLang("fr");
+
+  // Ajoute les événements sur les boutons de langue
+  document.querySelectorAll(".lang-switch button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const lang = btn.dataset.lang;
+      if (lang) {
+        switchLang(lang);
+      }
+    });
+  });
 });
+
 
 // ===== GESTION E-MAIL (HÉRO + TÉMOIGNAGES) =====
 
