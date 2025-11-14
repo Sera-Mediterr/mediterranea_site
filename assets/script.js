@@ -13,6 +13,13 @@ const translations = {
     s2: "Visites (présentiel / vidéo) & comptes rendus",
     s3: "Négociation & sécurisation jusqu’à l’acte",
     s4: "Coordination locale (notaires, trad, démarches)",
+    // MODALE m1
+    m1_title: "Recherche ciblée & présélection",
+    m1_p1:
+      "Brief précis (budget, lieux, critères). Veille Espagne/Maroc, filtrage des annonces.",
+    m1_li1: "Cartographie quartiers / micro-marchés",
+    m1_li2: "Repérage opportunités / signaux d’alerte",
+    m1_li3: "Pré-questions aux agences / vendeurs",
 
     // CTA haut
     cta_hero_btn:
@@ -107,6 +114,13 @@ const translations = {
     s2: "Viewings (in-person / video) & reporting",
     s3: "Negotiation & deal security to completion",
     s4: "Local coordination (notaries, translations, admin)",
+        // MODAL m1
+    m1_title: "Targeted search & pre-selection",
+    m1_p1:
+      "Detailed brief (budget, areas, criteria). Monitoring in Spain/Morocco, filtering listings.",
+    m1_li1: "Neighbourhood / micro-market mapping",
+    m1_li2: "Spotting opportunities / warning signs",
+    m1_li3: "Pre-screening questions for agencies / sellers",
 
     cta_hero_btn:
       "Ready to make your property project real? Get in touch now",
@@ -191,6 +205,14 @@ const translations = {
     s2: "Visite (presenza / video) & report",
     s3: "Negoziazione & sicurezza fino al rogito",
     s4: "Coordinamento locale (notai, traduzioni, pratiche)",
+        // MODALE m1
+    m1_title: "Ricerca mirata & preselezione",
+    m1_p1:
+      "Brief preciso (budget, zone, criteri). Monitoraggio Spagna/Marocco, filtraggio annunci.",
+    m1_li1: "Mappatura quartieri / micromercati",
+    m1_li2: "Individuazione opportunità / segnali d’allarme",
+    m1_li3: "Domande preliminari ad agenzie / venditori",
+
 
     cta_hero_btn:
       "Pronto a concretizzare il tuo progetto immobiliare? Contattami ora",
