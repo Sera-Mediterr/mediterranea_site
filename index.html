@@ -41,28 +41,13 @@
       </p>
 
       <div class="hero-contact" id="hero-contact">
-        <!-- Bouton E-mail -->
-       <details class="email-pop">
-  <summary class="btn btn-outline">
-    E-mail
-  </summary>
-  <div id="emailBoxTop"
-       class="email-box"
-       aria-live="polite">
-    <div class="email-row">
-      <span id="emailTextTop" class="email-text">
-        MediterraneaPropertyConsulting[a]proton.me
-      </span>
-      <button class="copy-btn" onclick="copyEmail('Top')">
-        Copier
-      </button>
-    </div>
-    <small style="display:block;margin-top:6px;color:#666;">
-      (Remplace [a] par @ dans ta messagerie)
-    </small>
-  </div>
-</details>
-
+       <!-- Bouton E-mail -->
+<a id="showEmailTop"
+   href="#"
+   class="btn btn-outline"
+   onclick="revealEmail('Top'); return false;">
+  E-mail
+</a>
         
         <!-- LinkedIn -->
         <a
