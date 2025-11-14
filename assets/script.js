@@ -94,28 +94,65 @@ const translations = {
     // FOOTER
     footer_text: "© Mediterranea Property Consulting – Serafina LOGGIA"
   },
-  en: {
+    en: {
     // HERO
     tagline: "Your real estate partner in the Mediterranean",
     subtitle:
-      "Buyer's advisor (FR–EN–IT). Specialist Spain & Morocco: research, analysis, viewings, negotiation, legal checks.",
-    about_title: "About me",
+      "Buyer's agent (FR–EN–IT). Specialist Spain & Morocco: research, analysis, viewings, negotiation, legal security.",
+    about_title: "About",
     about_body:
-      "I am Serafina LOGGIA. I assist buyers investing or relocating to Spain and Morocco.",
+      "My name is Serafina LOGGIA. I help buyers invest or relocate to Spain and Morocco.",
 
     // SERVICES
     services_title: "What I bring",
     s1: "Targeted search & pre-selection",
-    s2: "On-site / video viewings & reports",
+    s2: "Visits (in-person / video) & reports",
     s3: "Negotiation & legal safety up to completion",
     s4: "Local coordination (notaries, translation, admin)",
 
+    // CTA haut
+    cta_hero_btn:
+      "Ready to make your property project a reality? Contact me now",
+    cta_hero_whats: "Let’s talk on WhatsApp",
+
     // CTA bas
-    contact_whats_btn: "Questions? I reply within 24h – Let’s talk on WhatsApp",
+    contact_whats_btn:
+      "Questions? I reply within 24 hours – Let’s talk on WhatsApp",
 
     // FOOTER
     footer_text: "© Mediterranea Property Consulting – Serafina LOGGIA"
   },
+
+  it: {
+    // HERO
+    tagline: "La tua consulente immobiliare nel Mediterraneo",
+    subtitle:
+      "Consulente acquirenti (FR–EN–IT). Specialista Spagna & Marocco: ricerca, analisi, visite, negoziazione, verifiche legali.",
+    about_title: "Chi sono",
+    about_body:
+      "Mi chiamo Serafina LOGGIA. Accompagno gli acquirenti che vogliono investire o trasferirsi in Spagna o Marocco.",
+
+    // SERVICES
+    services_title: "Cosa offro",
+    s1: "Ricerca mirata & preselezione",
+    s2: "Visite (in presenza / video) & resoconti",
+    s3: "Negoziazione & sicurezza legale fino al rogito",
+    s4: "Coordinamento locale (notai, traduzione, pratiche)",
+
+    // CTA haut
+    cta_hero_btn:
+      "Pronta a realizzare il tuo progetto immobiliare? Contattami ora",
+    cta_hero_whats: "Parliamo su WhatsApp",
+
+    // CTA bas
+    contact_whats_btn:
+      "Domande? Rispondo entro 24 ore – Parliamo su WhatsApp",
+
+    // FOOTER
+    footer_text: "© Mediterranea Property Consulting – Serafina LOGGIA"
+  }
+};
+
 
   it: {
     // HERO
