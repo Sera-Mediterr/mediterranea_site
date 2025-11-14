@@ -207,11 +207,22 @@ const translations = {
     about_title: "Chi sono",
     about_body:
       "Sono Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
-    services_title: "Cosa offro",
+        services_title: "Cosa offro",
     s1: "Ricerca mirata & preselezione",
     s2: "Visite (presenza / video) & report",
     s3: "Negoziazione & sicurezza fino al rogito",
     s4: "Coordinamento locale (notai, traduzioni, pratiche)",
+
+    // MODALE m1
+    m1_title: "Ricerca mirata & preselezione",
+    m1_p1:
+      "Brief preciso (budget, zone, criteri). Monitoraggio Spagna/Marocco, filtraggio annunci.",
+    m1_li1: "Mappatura quartieri / micromercati",
+    m1_li2: "Individuazione opportunità / segnali d’allarme",
+    m1_li3: "Domande preliminari ad agenzie / venditori",
+
+    cta_hero_btn:
+
 
     cta_hero_btn:
       "Pronto a concretizzare il tuo progetto immobiliare? Contattami ora",
