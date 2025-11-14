@@ -110,7 +110,12 @@ a:hover{text-decoration:underline}
   flex-wrap:nowrap;
   gap:16px;
   justify-content:center;
-  align-items:center; /* ❤️ ajoute cette ligne */
+  align-items:center;
+}
+
+.hero-contact > *{
+    display:flex;
+    align-items:center;
 }
 .email-pop{
     display:inline-flex;
