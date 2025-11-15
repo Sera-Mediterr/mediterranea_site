@@ -5,6 +5,9 @@ const translations = {
     tagline: "Votre partenaire immobilier en Méditerranée",
     subtitle:
       "Conseil acheteur (FR–EN–IT). Spécialiste Espagne & Maroc : recherche, analyse, visites, négociation, sécurisation jusqu’à l’acte.",
+    country_maroc: "Immobilier au Maroc",
+    country_espagne: "Immobilier en Espagne",
+    country_italie: "Immobilier en Italie du Sud",
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
