@@ -384,6 +384,7 @@ function switchLang(lang) {
   const dict = translations[lang];
   if (!dict) return;
 
+  // 1) Mise à jour des textes
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (dict[key] !== undefined) {
@@ -391,11 +392,43 @@ function switchLang(lang) {
     }
   });
 
-  // état visuel des boutons
+  // 2) Mise à jour des liens des boutons pays
+  const btnMa = document.getElementById("btn-ma");
+  const btnEs = document.getElementById("btn-es");
+  const btnIt = document.getElementById("btn-it");
+
+  if (btnMa && dict.country_maroc_url) {
+    btnMa.href = dict.country_maroc_url;
+    btnMa.target = "_blank";
+    btnMa.rel = "noopener";
+  }
+
+  if (btnEs && dict.country_espagne_url) {
+    btnEs.href = dict.country_espagne_url;
+    btnEs.target = "_blank";
+    btnEs.rel = "noopener";
+  }
+
+  // Italie : si un jour tu ajoutes country_italie_url, il prendra le relai
+  if (btnIt) {
+    if (dict.country_italie_url) {
+      btnIt.href = dict.country_italie_url;
+      btnIt.target = "_blank";
+      btnIt.rel = "noopener";
+    } else {
+      // fallback actuel : renvoie vers la section contact du site principal
+      btnIt.href = "#contact";
+      btnIt.removeAttribute("target");
+      btnIt.removeAttribute("rel");
+    }
+  }
+
+  // 3) état visuel des boutons de langue
   document.querySelectorAll(".lang-switch button").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 }
+
 
 // langue par défaut + clic sur les boutons de langue
 document.addEventListener("DOMContentLoaded", () => {
