@@ -378,6 +378,7 @@ const translations = {
     footer_text: "© Mediterranea Property Consulting – Serafina LOGGIA"
   }
 };
+
 // Langue courante (par défaut : français)
 let currentLang = "fr";
 
