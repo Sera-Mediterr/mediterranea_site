@@ -13,7 +13,7 @@ const translations = {
     country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1"
     about_title: "À propos",
     about_body:
-      "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
+      "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne, en Italie et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
     services_title: "Ce que j’apporte",
     s1: "Recherche ciblée & présélection",
     s2: "Visites (présentiel / vidéo) & comptes rendus",
