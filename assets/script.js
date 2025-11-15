@@ -378,11 +378,45 @@ const translations = {
     footer_text: "© Mediterranea Property Consulting – Serafina LOGGIA"
   }
 };
+// Langue courante (par défaut : français)
+let currentLang = "fr";
+
+// Liens des pages Google Sites selon pays + langue
+const countryLinks = {
+  ma: { // Maroc
+    fr: "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil",
+    en: "https://sites.google.com/view/mediterraneapropertycons-men/accueil",
+    it: "https://sites.google.com/view/mediterranea-property-cons-mit/accueil"
+  },
+  es: { // Espagne
+    fr: "https://sites.google.com/view/mediterranea-property-cons-efr/accueil",
+    en: "https://sites.google.com/view/mediterraneapropertycons-een/accueil",
+    it: "https://sites.google.com/view/mediterraneapropertycons-eit/accueil"
+  },
+  it: { // Italie
+    fr: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une",
+    en: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil"
+    // si tu crées un jour la version IT, on ajoutera ici : it: "https://..."
+  }
+};
+
+// Ouvre la bonne page selon le pays + la langue active
+function openCountry(code) {
+  const links = countryLinks[code];
+  if (!links) return;
+
+  // si la langue n'existe pas pour ce pays, on ouvre l'EN
+  const url = links[currentLang] || links.en;
+  window.open(url, "_blank");
+}
+
 
 // ===== CHANGEMENT DE LANGUE =====
 function switchLang(lang) {
   const dict = translations[lang];
   if (!dict) return;
+
+  currentLang = lang;
 
   // 1) Mise à jour des textes
   document.querySelectorAll("[data-i18n]").forEach((el) => {
