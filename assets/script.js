@@ -133,6 +133,9 @@ const translations = {
     tagline: "Your Mediterranean buying advisor",
     subtitle:
       "Buyer’s agent (FR–EN–IT). Focus on Spain & Morocco: search, due diligence, viewings, negotiation, deal security to completion.",
+    country_maroc: "Property in Morocco",
+    country_espagne: "Property in Spain",
+    country_italie: "Property in Southern Italy",
     about_title: "About",
     about_body:
       "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
@@ -249,6 +252,9 @@ const translations = {
     tagline: "La tua consulente per acquistare nel Mediterraneo",
     subtitle:
       "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, trattativa, sicurezza fino al rogito.",
+    country_maroc: "Immobili in Marocco",
+    country_espagne: "Immobili in Spagna",
+    country_italie: "Immobili nel Sud Italia",
     about_title: "Chi sono",
     about_body:
       "Mi chiamo Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
