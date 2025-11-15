@@ -10,7 +10,7 @@ const translations = {
     country_italie: "Immobilier en Italie du Sud",
         country_maroc_url: "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil?authuser=1",
     country_espagne_url: "https://sites.google.com/view/mediterranea-property-cons-efr/accueil?authuser=1",
-    country_italie_url: "",
+    country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1"
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
@@ -141,7 +141,7 @@ const translations = {
     country_italie: "Property in Southern Italy",
         country_maroc_url: "https://sites.google.com/view/mediterraneapropertycons-men/accueil?authuser=1",
     country_espagne_url: "https://sites.google.com/view/mediterraneapropertycons-een/accueil?authuser=1",
-    country_italie_url: "",
+    country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1"
     about_title: "About",
     about_body:
       "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
@@ -260,7 +260,7 @@ const translations = {
       "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, trattativa, sicurezza fino al rogito.",
     country_maroc: "Immobili in Marocco",
     country_espagne: "Immobili in Spagna",
-    country_italie: "Immobili nel Sud Italia",
+    country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1"
         country_maroc_url: "https://sites.google.com/view/mediterranea-property-cons-mit/accueil?authuser=1",
     country_espagne_url: "https://sites.google.com/view/mediterraneapropertycons-eit/accueil?authuser=1",
     country_italie_url: "",
