@@ -327,7 +327,7 @@ const translations = {
       "Goditi la pensione senza spendere una fortuna: villa con piscina al prezzo di un monolocale in periferia… e avanza ancora budget.",
     who_remote_title: "Lavoratori da remoto",
     who_remote_text:
-      "Mantieni lo stipendio francese, vivi tra mare e sole, ufficio con vista, a 2 ore di aereo da Parigi.",
+      "Mantieni lo stipendio italiano, vivi tra mare e sole, ufficio con vista, a 2 ore di aereo dalla tua città italiana.",
     who_invest_title: "Investitori",
     who_invest_text:
       "Individua le opportunità prima degli altri (Murcia, Marocco 2030…) con un quadro giuridico sicuro.",
@@ -339,7 +339,7 @@ const translations = {
     why_es_li1:
       "Regime fiscale interessante (legge Beckham per alcuni profili)",
     why_es_li2:
-      "Prezzi ~40% inferiori rispetto alla Costa Italiana",
+      "Prezzi ~40% inferiori rispetto alla costa italiana",
     why_es_li3: "Solo 2 ore di volo da Milano",
     why_es_li4: "Comunità italiana ben presente",
     why_es_li5: "Qualità di vita eccellente",
