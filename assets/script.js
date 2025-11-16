@@ -202,7 +202,7 @@ const translations = {
       "Enjoy your retirement without breaking the bank: a villa with pool for the price of a studio near a big city… and money left over.",
     who_remote_title: "Remote workers",
     who_remote_text:
-      "Keep your French salary, live by the sea and in the sun, with an office view and only 2 hours from Paris.",
+      "Keep your foreign salary, live by the sea and in the sun, with an office view and only 2 hours from the biggest European cities.",
     who_invest_title: "Investors",
     who_invest_text:
       "Spot opportunities before the crowd (Spain -Murcia, Morocco 2030…) with a secure legal framework.",
@@ -211,12 +211,12 @@ const translations = {
     why_title: "Why invest in Spain or Morocco?",
     why_es_title: "🇪🇸 Spain",
     why_es_li1: "Attractive tax regime (Beckham law for some profiles)",
-    why_es_li2: "Prices ~40% lower than the French Riviera",
-    why_es_li3: "Only 2 hours by plane from Paris",
-    why_es_li4: "Well-established French-speaking community",
+    why_es_li2: "Prices ~40% lower than the French/Italian Riviera",
+    why_es_li3: "Only 2 hours by plane from Paris, Milan, London, Bruxelles...",
+    why_es_li4: "Well-established English-speaking community",
     why_es_li5: "Outstanding quality of life",
     why_ma_title: "🇲🇦 Morocco",
-    why_ma_li1: "Cost of living ~50% lower than in France",
+    why_ma_li1: "Cost of living ~50% lower than in most European capitals",
     why_ma_li2: "At least 320 days of sunshine per year",
     why_ma_li3: "World Cup 2030 → expected value increase",
     why_ma_li4: "Cultural and geographic proximity",
@@ -339,13 +339,13 @@ const translations = {
     why_es_li1:
       "Regime fiscale interessante (legge Beckham per alcuni profili)",
     why_es_li2:
-      "Prezzi ~40% inferiori rispetto alla Costa Azzurra",
-    why_es_li3: "Solo 2 ore di volo da Parigi",
-    why_es_li4: "Comunità francofona ben presente",
+      "Prezzi ~40% inferiori rispetto alla Costa Italiana",
+    why_es_li3: "Solo 2 ore di volo da Milano",
+    why_es_li4: "Comunità italiana ben presente",
     why_es_li5: "Qualità di vita eccellente",
     why_ma_title: "🇲🇦 Marocco",
     why_ma_li1:
-      "Costo della vita ~50% inferiore rispetto alla Francia",
+      "Costo della vita ~50% inferiore rispetto all'Italia",
     why_ma_li2: "Almeno 320 giorni di sole all’anno",
     why_ma_li3:
       "Mondiali 2030 → atteso aumento di valore",
@@ -356,7 +356,7 @@ const translations = {
     comparatif_title: "In pratica, quanto cambia davvero?",
 
     guides_title: "Guide gratuite per iniziare al meglio",
-    guide1_title: "5 errori fatali prima di comprare in Marocco",
+    guide1_title: "5 errori fatali prima di acquistare in Marocco",
     guide1_text:
       "Evita gli errori più comuni: catasto, avvocato, clausole, tempi, caparra…",
     guide2_title: "Checklist: Acquistare in Spagna nel 2025",
