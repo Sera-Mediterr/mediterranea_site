@@ -401,18 +401,18 @@ let currentLang = "fr";
 // ===== LIENS GOOGLE SITES PAR PAYS & LANGUE =====
 const countryLinks = {
   ma: { // Maroc
-    fr: "https://sites.google.com/view/mediterranea-property-cons-mfr",
-    en: "https://sites.google.com/view/mediterranea-property-cons-mit",
-    it: "https://sites.google.com/view/mediterranea-property-cons-mit"
+    fr: "https://sites.google.com/view/mediterranea-property-cons-mfr?usp=sharing",
+    en: "https://sites.google.com/view/mediterraneapropertycons-men?usp=sharing",
+    it: "https://sites.google.com/view/mediterranea-property-cons-mit?usp=sharing"
   },
   es: { // Espagne
-    fr: "https://sites.google.com/view/mediterranea-property-cons-efr",
-    en: "https://sites.google.com/view/mediterraneapropertycons-een",
-    it: "https://sites.google.com/view/mediterraneapropertycons-eit"
+    fr: "https://sites.google.com/view/mediterranea-property-cons-efr?usp=sharing",
+    en: "https://sites.google.com/view/mediterraneapropertycons-een?usp=sharing",
+    it: "https://sites.google.com/view/mediterraneapropertycons-eit?usp=sharing"
   },
   it: { // Italie
-    fr: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une",
-    en: "https://sites.google.com/view/mediterranea-property-cons-ifr"
+    fr: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1",
+    en: "https://sites.google.com/view/mediterranea-property-cons-ien?usp=sharing"
     // le jour où tu auras une version IT dédiée :
     // it: "https://sites.google.com/view/TON-SITE-ITALIE-IT"
   }
