@@ -8,17 +8,23 @@ const translations = {
     country_maroc: "Immobilier au Maroc",
     country_espagne: "Immobilier en Espagne",
     country_italie: "Immobilier en Italie du Sud",
-        country_maroc_url: "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil?authuser=1",
-    country_espagne_url: "https://sites.google.com/view/mediterranea-property-cons-efr/accueil?authuser=1",
-    country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1"
+    country_maroc_url:
+      "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil?authuser=1",
+    country_espagne_url:
+      "https://sites.google.com/view/mediterranea-property-cons-efr/accueil?authuser=1",
+    country_italie_url:
+      "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1",
+
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne, en Italie et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
+
     services_title: "Ce que j’apporte",
     s1: "Recherche ciblée & présélection",
     s2: "Visites (présentiel / vidéo) & comptes rendus",
     s3: "Négociation & sécurisation jusqu’à l’acte",
     s4: "Coordination locale (notaires, trad, démarches)",
+
     // MODALE m1
     m1_title: "Recherche ciblée & présélection",
     m1_p1:
@@ -26,7 +32,7 @@ const translations = {
     m1_li1: "Cartographie quartiers / micro-marchés",
     m1_li2: "Repérage opportunités / signaux d’alerte",
     m1_li3: "Pré-questions aux agences / vendeurs",
-    
+
     // MODALE m2
     m2_title: "Visites (présentiel / vidéo) & comptes rendus",
     m2_p1:
@@ -139,9 +145,13 @@ const translations = {
     country_maroc: "Property in Morocco",
     country_espagne: "Property in Spain",
     country_italie: "Property in Southern Italy",
-        country_maroc_url: "https://sites.google.com/view/mediterraneapropertycons-men/accueil?authuser=1",
-    country_espagne_url: "https://sites.google.com/view/mediterraneapropertycons-een/accueil?authuser=1",
-    country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1"
+    country_maroc_url:
+      "https://sites.google.com/view/mediterraneapropertycons-men/accueil?authuser=1",
+    country_espagne_url:
+      "https://sites.google.com/view/mediterraneapropertycons-een/accueil?authuser=1",
+    country_italie_url:
+      "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1",
+
     about_title: "About",
     about_body:
       "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
@@ -150,15 +160,16 @@ const translations = {
     s2: "Viewings (in-person / video) & reporting",
     s3: "Negotiation & deal security to completion",
     s4: "Local coordination (notaries, translations, admin)",
-        // MODAL m1
+
+    // MODAL m1
     m1_title: "Targeted search & pre-selection",
     m1_p1:
       "Detailed brief (budget, areas, criteria). Monitoring in Spain/Morocco, filtering listings.",
     m1_li1: "Neighbourhood / micro-market mapping",
     m1_li2: "Spotting opportunities / warning signs",
     m1_li3: "Pre-screening questions for agencies / sellers",
-    
-        // MODAL m2
+
+    // MODAL m2
     m2_title: "Viewings (in-person / video) & reports",
     m2_p1:
       "Organisation of in-person or video viewings. Analysis, objective advice, strengths and weaknesses.",
@@ -181,7 +192,6 @@ const translations = {
     m4_li1: "Notarial & legal coordination",
     m4_li2: "Official translations & documentation",
     m4_li3: "Support with local admin (NIE, banks, cadastre)",
-
 
     cta_hero_btn:
       "Ready to make your property project real? Get in touch now",
@@ -260,10 +270,13 @@ const translations = {
       "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, trattativa, sicurezza fino al rogito.",
     country_maroc: "Immobili in Marocco",
     country_espagne: "Immobili in Spagna",
-    country_italie_url: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1"
-        country_maroc_url: "https://sites.google.com/view/mediterranea-property-cons-mit/accueil?authuser=1",
-    country_espagne_url: "https://sites.google.com/view/mediterraneapropertycons-eit/accueil?authuser=1",
-    country_italie_url: "",
+    country_italie: "Immobili nel Sud Italia",
+    country_maroc_url:
+      "https://sites.google.com/view/mediterranea-property-cons-mit/accueil?authuser=1",
+    country_espagne_url:
+      "https://sites.google.com/view/mediterraneapropertycons-eit/accueil?authuser=1",
+    country_italie_url: "", // pas encore de page Italie en IT
+
     about_title: "Chi sono",
     about_body:
       "Mi chiamo Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
@@ -272,7 +285,8 @@ const translations = {
     s2: "Visite (presenza / video) & report",
     s3: "Trattativa & sicurezza fino al rogito",
     s4: "Coordinamento locale (notai, traduzioni, pratiche)",
-        // MODALE m1
+
+    // MODALE m1
     m1_title: "Ricerca mirata & preselezione",
     m1_p1:
       "Brief preciso (budget, zone, criteri). Monitoraggio Spagna/Marocco, filtraggio annunci.",
@@ -280,7 +294,7 @@ const translations = {
     m1_li2: "Individuazione opportunità / segnali d’allarme",
     m1_li3: "Domande preliminari ad agenzie / venditori",
 
-        // MODALE m2
+    // MODALE m2
     m2_title: "Visite (presenza / video) & report",
     m2_p1:
       "Organizzazione visite sul posto o in video. Analisi, parere obiettivo, punti di forza/debolezza.",
@@ -303,7 +317,6 @@ const translations = {
     m4_li1: "Coordinamento notarile e giuridico",
     m4_li2: "Traduzioni ufficiali & gestione documenti",
     m4_li3: "Assistenza pratiche locali (NIE, banche, catasto)",
-
 
     cta_hero_btn:
       "Pronto a concretizzare il tuo progetto immobiliare? Contattami ora",
@@ -384,20 +397,23 @@ let currentLang = "fr";
 
 // Liens des pages Google Sites selon pays + langue
 const countryLinks = {
-  ma: { // Maroc
+  ma: {
+    // Maroc
     fr: "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil",
     en: "https://sites.google.com/view/mediterraneapropertycons-men/accueil",
     it: "https://sites.google.com/view/mediterranea-property-cons-mit/accueil"
   },
-  es: { // Espagne
+  es: {
+    // Espagne
     fr: "https://sites.google.com/view/mediterranea-property-cons-efr/accueil",
     en: "https://sites.google.com/view/mediterraneapropertycons-een/accueil",
     it: "https://sites.google.com/view/mediterraneapropertycons-eit/accueil"
   },
-  it: { // Italie
+  it: {
+    // Italie
     fr: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une",
     en: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil"
-    // si tu crées un jour la version IT, on ajoutera ici : it: "https://..."
+    // it: "..." si un jour tu crées la version italienne
   }
 };
 
@@ -410,7 +426,6 @@ function openCountry(code) {
   const url = links[currentLang] || links.en;
   window.open(url, "_blank");
 }
-
 
 // ===== CHANGEMENT DE LANGUE =====
 function switchLang(lang) {
@@ -427,43 +442,11 @@ function switchLang(lang) {
     }
   });
 
-  // 2) Mise à jour des liens des boutons pays
-  const btnMa = document.getElementById("btn-ma");
-  const btnEs = document.getElementById("btn-es");
-  const btnIt = document.getElementById("btn-it");
-
-  if (btnMa && dict.country_maroc_url) {
-    btnMa.href = dict.country_maroc_url;
-    btnMa.target = "_blank";
-    btnMa.rel = "noopener";
-  }
-
-  if (btnEs && dict.country_espagne_url) {
-    btnEs.href = dict.country_espagne_url;
-    btnEs.target = "_blank";
-    btnEs.rel = "noopener";
-  }
-
-  // Italie : si un jour tu ajoutes country_italie_url, il prendra le relai
-  if (btnIt) {
-    if (dict.country_italie_url) {
-      btnIt.href = dict.country_italie_url;
-      btnIt.target = "_blank";
-      btnIt.rel = "noopener";
-    } else {
-      // fallback actuel : renvoie vers la section contact du site principal
-      btnIt.href = "#contact";
-      btnIt.removeAttribute("target");
-      btnIt.removeAttribute("rel");
-    }
-  }
-
-  // 3) état visuel des boutons de langue
+  // 2) état visuel des boutons de langue
   document.querySelectorAll(".lang-switch button").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 }
-
 
 // langue par défaut + clic sur les boutons de langue
 document.addEventListener("DOMContentLoaded", () => {
