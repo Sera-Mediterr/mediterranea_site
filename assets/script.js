@@ -461,7 +461,26 @@ document.addEventListener("DOMContentLoaded", () => {
       if (lang) switchLang(lang);
     });
   });
+
+  // ===== BOUTONS PAYS (Maroc / Espagne / Italie) =====
+  const countryMap = {
+    maroc: "ma",
+    espagne: "es",
+    italie: "it"
+  };
+
+  // on écoute le clic sur chaque pill
+  document.querySelectorAll(".country-pill").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const key = btn.dataset.country; // "maroc", "espagne" ou "italie"
+      const code = countryMap[key];    // "ma", "es" ou "it"
+      if (code) {
+        openCountry(code);            // ouvre la bonne page Google Sites
+      }
+    });
+  });
 });
+
 
 // ===== GESTION E-MAIL (HÉRO + TÉMOIGNAGES) =====
 
