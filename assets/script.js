@@ -8,17 +8,13 @@ const translations = {
     country_maroc: "Immobilier au Maroc",
     country_espagne: "Immobilier en Espagne",
     country_italie: "Immobilier en Italie du Sud",
-    country_maroc_url:
-      "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil?authuser=1",
-    country_espagne_url:
-      "https://sites.google.com/view/mediterranea-property-cons-efr/accueil?authuser=1",
-    country_italie_url:
-      "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1",
 
+    // À PROPOS
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne, en Italie et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
 
+    // SERVICES
     services_title: "Ce que j’apporte",
     s1: "Recherche ciblée & présélection",
     s2: "Visites (présentiel / vidéo) & comptes rendus",
@@ -72,7 +68,7 @@ const translations = {
       "Gardez votre salaire français, vivez mer & soleil, bureau avec vue, à 2h d’avion de Paris.",
     who_invest_title: "Investisseurs",
     who_invest_text:
-      "Repérez les opportunités avant la foule (Espagne -Murcie, Maroc 2030…) avec un cadre juridique sécurisé.",
+      "Repérez les opportunités avant la foule (Espagne – Murcie, Maroc 2030…) avec un cadre juridique sécurisé.",
     who_special_btn: "🌞 Spécial Retraités & Télétravailleurs",
 
     // POURQUOI
@@ -139,22 +135,20 @@ const translations = {
   },
 
   en: {
+    // HERO
     tagline: "Your Mediterranean buying advisor",
     subtitle:
       "Buyer’s agent (FR–EN–IT). Focus on Spain & Morocco: search, due diligence, viewings, negotiation, deal security to completion.",
     country_maroc: "Property in Morocco",
     country_espagne: "Property in Spain",
     country_italie: "Property in Southern Italy",
-    country_maroc_url:
-      "https://sites.google.com/view/mediterraneapropertycons-men/accueil?authuser=1",
-    country_espagne_url:
-      "https://sites.google.com/view/mediterraneapropertycons-een/accueil?authuser=1",
-    country_italie_url:
-      "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1",
 
+    // ABOUT
     about_title: "About",
     about_body:
       "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
+
+    // SERVICES
     services_title: "What I deliver",
     s1: "Targeted search & shortlisting",
     s2: "Viewings (in-person / video) & reporting",
@@ -193,10 +187,12 @@ const translations = {
     m4_li2: "Official translations & documentation",
     m4_li3: "Support with local admin (NIE, banks, cadastre)",
 
+    // CTA
     cta_hero_btn:
       "Ready to make your property project real? Get in touch now",
     cta_hero_whats: "Let’s talk on WhatsApp",
 
+    // WHO
     who_title: "This service is for you if…",
     who_retirees_title: "Retirees",
     who_retirees_text:
@@ -206,9 +202,10 @@ const translations = {
       "Keep your French salary, live by the sea and in the sun, with an office view and only 2 hours from Paris.",
     who_invest_title: "Investors",
     who_invest_text:
-      "Spot opportunities before the crowd (Spain -Murcia, Morocco 2030…) with a secure legal framework.",
+      "Spot opportunities before the crowd (Spain – Murcia, Morocco 2030…) with a secure legal framework.",
     who_special_btn: "🌞 Special Retirees & Remote workers",
 
+    // WHY
     why_title: "Why invest in Spain or Morocco?",
     why_es_title: "🇪🇸 Spain",
     why_es_li1: "Attractive tax regime (Beckham law for some profiles)",
@@ -226,6 +223,7 @@ const translations = {
 
     comparatif_title: "In practice, how big is the difference?",
 
+    // GUIDES
     guides_title: "Free guides to get started",
     guide1_title: "5 fatal mistakes before buying in Morocco",
     guide1_text:
@@ -238,16 +236,18 @@ const translations = {
       "What you need to know before leaving: tax residency, treaties, taxes.",
     guide_btn: "Download for free",
 
+    // TESTIMONIALS
     temoignages_title: "They took the leap",
     temoignages_note:
       "First clients currently supported. Testimonials and detailed feedback coming very soon.",
     temoignages_intro: "Already bought abroad? Share your experience:",
     temoignages_link: "send a testimonial",
 
+    // FAQ
     faq_title: "Frequently asked questions",
     faq_q1: "How much do your services cost?",
     faq_a1:
-      "I am -most of the time- paid by the seller. You therefore don’t pay anything directly.",
+      "I am – most of the time – paid by the seller. You therefore don’t pay anything directly.",
     faq_q2: "I don’t speak Spanish/Arabic – is that a problem?",
     faq_a2:
       "No. I handle everything in French, English, Italian & Spanish and I take care of certified translations.",
@@ -265,21 +265,20 @@ const translations = {
   },
 
   it: {
+    // HERO
     tagline: "La tua consulente per acquistare nel Mediterraneo",
     subtitle:
       "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, trattativa, sicurezza fino al rogito.",
     country_maroc: "Immobili in Marocco",
     country_espagne: "Immobili in Spagna",
     country_italie: "Immobili nel Sud Italia",
-    country_maroc_url:
-      "https://sites.google.com/view/mediterranea-property-cons-mit/accueil?authuser=1",
-    country_espagne_url:
-      "https://sites.google.com/view/mediterraneapropertycons-eit/accueil?authuser=1",
-    country_italie_url: "", // pas encore de page Italie en IT
 
+    // CHI SONO
     about_title: "Chi sono",
     about_body:
       "Mi chiamo Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
+
+    // SERVIZI
     services_title: "Cosa offro",
     s1: "Ricerca mirata & preselezione",
     s2: "Visite (presenza / video) & report",
@@ -318,10 +317,12 @@ const translations = {
     m4_li2: "Traduzioni ufficiali & gestione documenti",
     m4_li3: "Assistenza pratiche locali (NIE, banche, catasto)",
 
+    // CTA
     cta_hero_btn:
       "Pronto a concretizzare il tuo progetto immobiliare? Contattami ora",
     cta_hero_whats: "Parliamone su WhatsApp",
 
+    // PER CHI
     who_title: "Questo servizio fa per te se…",
     who_retirees_title: "Pensionati",
     who_retirees_text:
@@ -334,6 +335,7 @@ const translations = {
       "Individua le opportunità prima degli altri (Murcia, Marocco 2030…) con un quadro giuridico sicuro.",
     who_special_btn: "🌞 Speciale Pensionati & Remote workers",
 
+    // PERCHÉ
     why_title: "Perché investire in Spagna o in Marocco?",
     why_es_title: "🇪🇸 Spagna",
     why_es_li1:
@@ -352,6 +354,7 @@ const translations = {
 
     comparatif_title: "In pratica, quanto cambia davvero?",
 
+    // GUIDE
     guides_title: "Guide gratuite per iniziare al meglio",
     guide1_title: "5 errori fatali prima di comprare in Marocco",
     guide1_text:
@@ -364,6 +367,7 @@ const translations = {
       "Cosa sapere prima di partire: residenza fiscale, convenzioni, imposte.",
     guide_btn: "Scarica gratuitamente",
 
+    // TESTIMONIANZE
     temoignages_title: "Hanno fatto il grande passo",
     temoignages_note:
       "Primi clienti attualmente accompagnati. Testimonianze e feedback dettagliati in arrivo.",
@@ -371,6 +375,7 @@ const translations = {
       "Hai già acquistato all’estero? Condividi la tua esperienza:",
     temoignages_link: "invia una testimonianza",
 
+    // FAQ
     faq_title: "Domande frequenti",
     faq_q1: "Quanto costano i tuoi servizi?",
     faq_a1:
@@ -392,28 +397,25 @@ const translations = {
   }
 };
 
-// Langue courante (par défaut : français)
+// ===== LANGUE COURANTE =====
 let currentLang = "fr";
 
-// Liens des pages Google Sites selon pays + langue
+// ===== LIENS GOOGLE SITES PAR PAYS & LANGUE =====
 const countryLinks = {
-  ma: {
-    // Maroc
+  ma: { // Maroc
     fr: "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil",
     en: "https://sites.google.com/view/mediterraneapropertycons-men/accueil",
     it: "https://sites.google.com/view/mediterranea-property-cons-mit/accueil"
   },
-  es: {
-    // Espagne
+  es: { // Espagne
     fr: "https://sites.google.com/view/mediterranea-property-cons-efr/accueil",
     en: "https://sites.google.com/view/mediterraneapropertycons-een/accueil",
     it: "https://sites.google.com/view/mediterraneapropertycons-eit/accueil"
   },
-  it: {
-    // Italie
+  it: { // Italie
     fr: "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une",
     en: "https://sites.google.com/view/mediterranea-property-cons-ien/accueil"
-    // it: "..." si un jour tu crées la version italienne
+    // si tu crées un jour la version IT, on ajoutera ici : it: "https://..."
   }
 };
 
@@ -422,8 +424,7 @@ function openCountry(code) {
   const links = countryLinks[code];
   if (!links) return;
 
-  // si la langue n'existe pas pour ce pays, on ouvre l'EN
-  const url = links[currentLang] || links.en;
+  const url = links[currentLang] || links.en; // fallback EN
   window.open(url, "_blank");
 }
 
@@ -442,24 +443,22 @@ function switchLang(lang) {
     }
   });
 
-  // 2) état visuel des boutons de langue
+  // 2) État visuel des boutons de langue
   document.querySelectorAll(".lang-switch button").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 }
 
-// langue par défaut + clic sur les boutons de langue
+// ===== INIT À CHARGEMENT =====
 document.addEventListener("DOMContentLoaded", () => {
   // langue par défaut
   switchLang("fr");
 
-  // clic sur les boutons EN / IT
+  // boutons EN / IT
   document.querySelectorAll(".lang-switch button").forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.dataset.lang;
-      if (lang) {
-        switchLang(lang);
-      }
+      if (lang) switchLang(lang);
     });
   });
 });
@@ -471,7 +470,6 @@ function revealEmail(tag) {
   const box = document.getElementById("emailBox" + tag);
   if (!box) return;
 
-  // Toggle
   if (box.style.display === "none" || box.style.display === "") {
     box.style.display = "block";
   } else {
