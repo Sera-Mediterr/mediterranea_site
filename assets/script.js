@@ -8,13 +8,16 @@ const translations = {
     country_maroc: "Immobilier au Maroc",
     country_espagne: "Immobilier en Espagne",
     country_italie: "Immobilier en Italie du Sud",
+    country_maroc_url:
+      "https://sites.google.com/view/mediterranea-property-cons-mfr/accueil?authuser=1",
+    country_espagne_url:
+      "https://sites.google.com/view/mediterranea-property-cons-efr/accueil?authuser=1",
+    country_italie_url:
+      "https://sites.google.com/view/mediterranea-property-cons-ifr/propri%C3%A9t%C3%A9s-en-vente-%C3%A0-la-une?authuser=1",
 
-    // À PROPOS
     about_title: "À propos",
     about_body:
       "Je m'appelle Serafina LOGGIA. J’accompagne des acheteurs pour investir ou s’installer en Espagne, en Italie et au Maroc. Mon rôle : filtrer les biens, vérifier, organiser les visites, négocier, coordonner les démarches et sécuriser l’opération jusqu’à la signature.",
-
-    // SERVICES
     services_title: "Ce que j’apporte",
     s1: "Recherche ciblée & présélection",
     s2: "Visites (présentiel / vidéo) & comptes rendus",
@@ -68,7 +71,7 @@ const translations = {
       "Gardez votre salaire français, vivez mer & soleil, bureau avec vue, à 2h d’avion de Paris.",
     who_invest_title: "Investisseurs",
     who_invest_text:
-      "Repérez les opportunités avant la foule (Espagne – Murcie, Maroc 2030…) avec un cadre juridique sécurisé.",
+      "Repérez les opportunités avant la foule (Espagne -Murcie, Maroc 2030…) avec un cadre juridique sécurisé.",
     who_special_btn: "🌞 Spécial Retraités & Télétravailleurs",
 
     // POURQUOI
@@ -135,20 +138,22 @@ const translations = {
   },
 
   en: {
-    // HERO
     tagline: "Your Mediterranean buying advisor",
     subtitle:
       "Buyer’s agent (FR–EN–IT). Focus on Spain & Morocco: search, due diligence, viewings, negotiation, deal security to completion.",
     country_maroc: "Property in Morocco",
     country_espagne: "Property in Spain",
     country_italie: "Property in Southern Italy",
+    country_maroc_url:
+      "https://sites.google.com/view/mediterraneapropertycons-men/accueil?authuser=1",
+    country_espagne_url:
+      "https://sites.google.com/view/mediterraneapropertycons-een/accueil?authuser=1",
+    country_italie_url:
+      "https://sites.google.com/view/mediterranea-property-cons-ien/accueil?authuser=1",
 
-    // ABOUT
     about_title: "About",
     about_body:
       "I’m Serafina LOGGIA. I support buyers in Spain and Morocco. I shortlist properties, verify information, arrange viewings, negotiate, coordinate the process and secure the deal up to completion.",
-
-    // SERVICES
     services_title: "What I deliver",
     s1: "Targeted search & shortlisting",
     s2: "Viewings (in-person / video) & reporting",
@@ -187,12 +192,10 @@ const translations = {
     m4_li2: "Official translations & documentation",
     m4_li3: "Support with local admin (NIE, banks, cadastre)",
 
-    // CTA
     cta_hero_btn:
       "Ready to make your property project real? Get in touch now",
     cta_hero_whats: "Let’s talk on WhatsApp",
 
-    // WHO
     who_title: "This service is for you if…",
     who_retirees_title: "Retirees",
     who_retirees_text:
@@ -202,10 +205,9 @@ const translations = {
       "Keep your French salary, live by the sea and in the sun, with an office view and only 2 hours from Paris.",
     who_invest_title: "Investors",
     who_invest_text:
-      "Spot opportunities before the crowd (Spain – Murcia, Morocco 2030…) with a secure legal framework.",
+      "Spot opportunities before the crowd (Spain -Murcia, Morocco 2030…) with a secure legal framework.",
     who_special_btn: "🌞 Special Retirees & Remote workers",
 
-    // WHY
     why_title: "Why invest in Spain or Morocco?",
     why_es_title: "🇪🇸 Spain",
     why_es_li1: "Attractive tax regime (Beckham law for some profiles)",
@@ -223,7 +225,6 @@ const translations = {
 
     comparatif_title: "In practice, how big is the difference?",
 
-    // GUIDES
     guides_title: "Free guides to get started",
     guide1_title: "5 fatal mistakes before buying in Morocco",
     guide1_text:
@@ -236,18 +237,16 @@ const translations = {
       "What you need to know before leaving: tax residency, treaties, taxes.",
     guide_btn: "Download for free",
 
-    // TESTIMONIALS
     temoignages_title: "They took the leap",
     temoignages_note:
       "First clients currently supported. Testimonials and detailed feedback coming very soon.",
     temoignages_intro: "Already bought abroad? Share your experience:",
     temoignages_link: "send a testimonial",
 
-    // FAQ
     faq_title: "Frequently asked questions",
     faq_q1: "How much do your services cost?",
     faq_a1:
-      "I am – most of the time – paid by the seller. You therefore don’t pay anything directly.",
+      "I am -most of the time- paid by the seller. You therefore don’t pay anything directly.",
     faq_q2: "I don’t speak Spanish/Arabic – is that a problem?",
     faq_a2:
       "No. I handle everything in French, English, Italian & Spanish and I take care of certified translations.",
@@ -265,20 +264,21 @@ const translations = {
   },
 
   it: {
-    // HERO
     tagline: "La tua consulente per acquistare nel Mediterraneo",
     subtitle:
       "Consulenza acquirente (FR–EN–IT). Focus Spagna & Marocco: ricerca, verifica, visite, trattativa, sicurezza fino al rogito.",
     country_maroc: "Immobili in Marocco",
     country_espagne: "Immobili in Spagna",
     country_italie: "Immobili nel Sud Italia",
+    country_maroc_url:
+      "https://sites.google.com/view/mediterranea-property-cons-mit/accueil?authuser=1",
+    country_espagne_url:
+      "https://sites.google.com/view/mediterraneapropertycons-eit/accueil?authuser=1",
+    country_italie_url: "", // pas encore de page Italie en IT
 
-    // CHI SONO
     about_title: "Chi sono",
     about_body:
       "Mi chiamo Serafina LOGGIA. Accompagno chi acquista in Spagna e Marocco: preselezione immobili, verifiche, visite, negoziazione, coordinamento pratiche e sicurezza fino al rogito.",
-
-    // SERVIZI
     services_title: "Cosa offro",
     s1: "Ricerca mirata & preselezione",
     s2: "Visite (presenza / video) & report",
@@ -317,12 +317,10 @@ const translations = {
     m4_li2: "Traduzioni ufficiali & gestione documenti",
     m4_li3: "Assistenza pratiche locali (NIE, banche, catasto)",
 
-    // CTA
     cta_hero_btn:
       "Pronto a concretizzare il tuo progetto immobiliare? Contattami ora",
     cta_hero_whats: "Parliamone su WhatsApp",
 
-    // PER CHI
     who_title: "Questo servizio fa per te se…",
     who_retirees_title: "Pensionati",
     who_retirees_text:
@@ -333,28 +331,30 @@ const translations = {
     who_invest_title: "Investitori",
     who_invest_text:
       "Individua le opportunità prima degli altri (Murcia, Marocco 2030…) con un quadro giuridico sicuro.",
-    who_special_btn: "🌞 Speciale Pensionati & Remote workers",
+    who_special_btn:
+      "🌞 Speciale Pensionati & Remote workers",
 
-    // PERCHÉ
     why_title: "Perché investire in Spagna o in Marocco?",
     why_es_title: "🇪🇸 Spagna",
     why_es_li1:
       "Regime fiscale interessante (legge Beckham per alcuni profili)",
-    why_es_li2: "Prezzi ~40% inferiori rispetto alla Costa Azzurra",
+    why_es_li2:
+      "Prezzi ~40% inferiori rispetto alla Costa Azzurra",
     why_es_li3: "Solo 2 ore di volo da Parigi",
     why_es_li4: "Comunità francofona ben presente",
     why_es_li5: "Qualità di vita eccellente",
     why_ma_title: "🇲🇦 Marocco",
-    why_ma_li1: "Costo della vita ~50% inferiore rispetto alla Francia",
+    why_ma_li1:
+      "Costo della vita ~50% inferiore rispetto alla Francia",
     why_ma_li2: "Almeno 320 giorni di sole all’anno",
-    why_ma_li3: "Mondiali 2030 → atteso aumento di valore",
+    why_ma_li3:
+      "Mondiali 2030 → atteso aumento di valore",
     why_ma_li4: "Prossimità culturale e geografica",
     why_ma_li5: "Immobiliare molto accessibile",
     why_guide_btn: "Scarica la guida completa",
 
     comparatif_title: "In pratica, quanto cambia davvero?",
 
-    // GUIDE
     guides_title: "Guide gratuite per iniziare al meglio",
     guide1_title: "5 errori fatali prima di comprare in Marocco",
     guide1_text:
@@ -367,7 +367,6 @@ const translations = {
       "Cosa sapere prima di partire: residenza fiscale, convenzioni, imposte.",
     guide_btn: "Scarica gratuitamente",
 
-    // TESTIMONIANZE
     temoignages_title: "Hanno fatto il grande passo",
     temoignages_note:
       "Primi clienti attualmente accompagnati. Testimonianze e feedback dettagliati in arrivo.",
@@ -375,7 +374,6 @@ const translations = {
       "Hai già acquistato all’estero? Condividi la tua esperienza:",
     temoignages_link: "invia una testimonianza",
 
-    // FAQ
     faq_title: "Domande frequenti",
     faq_q1: "Quanto costano i tuoi servizi?",
     faq_a1:
