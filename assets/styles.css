@@ -1283,3 +1283,7 @@ a:hover{text-decoration:underline}
     text-align: center;
   }
 }
+/* Espace sous la section "Ce service est fait pour vous si..." */
+#who {
+  margin-bottom: 40px;
+}
