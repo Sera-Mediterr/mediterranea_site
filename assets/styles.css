@@ -1007,9 +1007,8 @@ a:hover{text-decoration:underline}
     max-width: 420px;
     margin: 0 auto;
   }
-}
 #pour-qui {
-  margin-bottom: 40px;
+  margin-bottom: 80px;   /* plus d’espace sous les cartes */
 }
 
 /* === FIX ALIGNEMENT BOUTON E-MAIL DANS LE HERO === */
