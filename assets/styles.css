@@ -1260,20 +1260,25 @@ a:hover{text-decoration:underline}
     flex-wrap: wrap;
   }
 }
+
 .cta-buttons {
-  margin-top: 32px;          /* fait descendre le bloc sous la ligne */
+  margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;                 /* espace entre les deux boutons */
+  gap: 16px;
+  justify-content: center;      /* centre les boutons */
 }
 
 .main-cta {
   display: inline-block;
-  padding: 18px 32px;        /* donne de la hauteur au bouton */
-  line-height: 1.3;          /* évite que le texte soit “coupé” */
+  flex: 0 0 auto;               /* ne pas s'étirer sur toute la largeur */
+  padding: 16px 28px;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 520px;             /* limite la largeur du gros bouton */
 }
 
-/* Option : sur mobile, tout centrer */
+/* Sur mobile, tout centrer */
 @media (max-width: 768px) {
   .cta-buttons {
     justify-content: center;
