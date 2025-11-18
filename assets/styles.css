@@ -1234,3 +1234,26 @@ a:hover{text-decoration:underline}
     margin: 0 auto;
   }
 }
+.about-signature {
+  display: flex;
+  justify-content: flex-end;   /* colle le bloc à droite */
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.about-photo {
+  width: 110px;                /* taille de la photo */
+  height: auto;
+  border-radius: 50%;          /* photo ronde */
+}
+
+/* option : sur mobile, on empile au centre */
+@media (max-width: 768px) {
+  .about-signature {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
