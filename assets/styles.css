@@ -1235,3 +1235,44 @@ a:hover{text-decoration:underline}
   }
 }
 Restore old styles.css
+/* === Photo de Serafina : petit rond à droite sur tous les écrans === */
+img[alt="Serafina Loggia - Mediterranea Property Consulting"] {
+  max-width: 180px;        /* taille max de la photo */
+  height: auto;
+  border-radius: 50%;      /* photo ronde */
+  float: right;
+  margin-left: 24px;       /* petit espace avec le texte */
+  margin-bottom: 24px;
+}
+/* === Pills contact : toujours colorés, même sur grand écran === */
+a[href^="mailto:"],
+a[href*="proton.me"],
+a[href*="linkedin.com"],
+a[href*="instagram.com"],
+a[href*="wa.me"] {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 999px;        /* forme de pill */
+  font-weight: 600;
+  text-decoration: none;
+  margin: 8px 12px 8px 0;
+  color: #fff;
+}
+
+/* Couleurs par type de lien */
+a[href^="mailto:"],
+a[href*="proton.me"] {
+  background: #245b75;         /* bleu pour E-mail */
+}
+
+a[href*="linkedin.com"] {
+  background: #0A66C2;         /* bleu LinkedIn */
+}
+
+a[href*="instagram.com"] {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+a[href*="wa.me"] {
+  background: #25D366;         /* vert WhatsApp */
+}
