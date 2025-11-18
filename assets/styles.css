@@ -1236,19 +1236,23 @@ a:hover{text-decoration:underline}
 }
 .about-signature {
   display: flex;
-  justify-content: flex-end;   /* colle le bloc à droite */
+  justify-content: flex-start;   /* aligné comme le reste du texte */
   align-items: center;
   gap: 16px;
-  margin-top: 8px;
+  margin-top: 24px;
+}
+
+.about-signature-text {
+  margin: 0;
 }
 
 .about-photo {
-  width: 110px;                /* taille de la photo */
+  width: 110px;                 /* taille de la petite photo */
   height: auto;
-  border-radius: 50%;          /* photo ronde */
+  border-radius: 50%;
 }
 
-/* option : sur mobile, on empile au centre */
+/* Sur mobile, on centre et on met à la ligne */
 @media (max-width: 768px) {
   .about-signature {
     justify-content: center;
@@ -1256,4 +1260,3 @@ a:hover{text-decoration:underline}
     flex-wrap: wrap;
   }
 }
-
