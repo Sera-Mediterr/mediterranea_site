@@ -1290,3 +1290,10 @@ a:hover{text-decoration:underline}
 #pour-qui {
   margin-bottom: 80px;
 }
+  /* Boutons orange dans la section Guides gratuits */
+#guides .btn {
+  font-size: 14px;       /* texte plus petit */
+  line-height: 1.2;      /* lignes plus serrées */
+  padding: 8px 16px;     /* un peu moins haut */
+}
+
