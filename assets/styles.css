@@ -1008,6 +1008,10 @@ a:hover{text-decoration:underline}
     margin: 0 auto;
   }
 }
+#pour-qui {
+  margin-bottom: 40px;
+}
+
 /* === FIX ALIGNEMENT BOUTON E-MAIL DANS LE HERO === */
 
 .hero-contact{
