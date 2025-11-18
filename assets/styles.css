@@ -1291,9 +1291,13 @@ a:hover{text-decoration:underline}
   margin-bottom: 80px;
 }
   /* Boutons orange dans la section Guides gratuits */
+/* Boutons orange dans la section Guides gratuits */
 #guides .btn {
-  font-size: 14px;       /* texte plus petit */
-  line-height: 1.2;      /* lignes plus serrées */
-  padding: 8px 16px;     /* un peu moins haut */
+  display: inline-block;
+  font-size: 14px;        /* texte plus petit */
+  line-height: 1.2;       /* lignes plus serrées */
+  padding: 6px 14px;      /* moins de hauteur interne */
+  height: auto;           /* pas de hauteur figée => plus de texte coupé */
+  white-space: normal;    /* autorise le retour à la ligne proprement */
 }
 
