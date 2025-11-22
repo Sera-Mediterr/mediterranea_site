@@ -1301,3 +1301,158 @@ a:hover{text-decoration:underline}
   white-space: normal;    /* autorise le retour à la ligne proprement */
 }
 
+/* === Section guides fiscaux === */
+
+.guide-section {
+  margin: 4rem auto;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  background: #f7fafc;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.guide-section h2 {
+  text-align: center;
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.guide-section .guide-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: #475569;
+}
+
+.guide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  margin: 0 auto 1rem;
+}
+
+.guide-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guide-card {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e2e8f0;
+  padding: 2.25rem 2rem;
+}
+
+.guide-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.guide-card p {
+  margin-bottom: 0.75rem;
+}
+
+.guide-list {
+  margin: 0 0 1.2rem 0;
+  padding-left: 1.1rem;
+  list-style: none;
+}
+
+.guide-list li {
+  margin-bottom: 0.4rem;
+}
+
+.guide-list li::before {
+  content: "✅ ";
+}
+
+.guide-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.guide-form-row label {
+  flex: 1 1 180px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.guide-form-row input[type="text"],
+.guide-form-row input[type="email"] {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.guide-form-row input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.guide-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.4rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #2563eb;
+  color: #ffffff;
+  transition: transform 0.05s ease, box-shadow 0.05s ease, background 0.15s ease;
+}
+
+.guide-submit:hover {
+  background: #1d4ed8;
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.guide-submit:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.guide-trust {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .guide-section {
+    padding: 2.25rem 1.25rem;
+  }
+
+  .guide-card {
+    padding: 1.75rem 1.4rem;
+  }
+}
