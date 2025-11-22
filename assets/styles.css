@@ -1567,3 +1567,24 @@ a:hover{text-decoration:underline}
   cursor: pointer;
   font-weight: 800;
   font-size:
+
+    /* Bouton vert spécial pour les CTA analyse + téléchargement */
+.btn-cta-green {
+  background: #16a34a;        /* vert qui claque */
+  color: #ffffff;             /* texte blanc lisible */
+  border-color: #16a34a;
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.45);
+}
+
+.btn-cta-green:hover {
+  background: #15803d;
+  border-color: #15803d;
+  box-shadow: 0 16px 32px rgba(21, 128, 61, 0.55);
+}
+
+.btn-cta-green:active {
+  background: #166534;
+  border-color: #166534;
+  box-shadow: 0 8px 18px rgba(22, 101, 52, 0.5);
+}
+
